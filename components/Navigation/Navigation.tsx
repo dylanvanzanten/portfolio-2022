@@ -37,17 +37,20 @@ const Navigation = ({}) => {
         <ul className="site-nav__list">
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              Work
             </Link>
           </li>
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              About
             </Link>
           </li>
           <li className="site-nav__list-item">
-            <Link className="site-nav__list-link" href="">
-              Link
+            <Link
+              className="site-nav__list-link site-nav__list-link--contact"
+              href=""
+            >
+              Let&apos;s talk!
             </Link>
           </li>
         </ul>
