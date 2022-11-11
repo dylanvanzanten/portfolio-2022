@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 
+// Components
+import Navigation from "../Navigation/Navigation";
+
 // Resources
 import Logo from "/public/logo.svg";
 
@@ -32,6 +35,7 @@ const Header = ({}) => {
             Go home
           </a>
         </span>
+        <Navigation />
       </div>
     </header>
   );
