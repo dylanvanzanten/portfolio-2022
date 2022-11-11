@@ -15,7 +15,14 @@ export default function Home() {
       <Header />
       <Hero />
 
-      <main></main>
+      <div className="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+          modi rem architecto labore, voluptate ducimus sapiente, nihil
+          voluptates, facere amet excepturi nostrum voluptatibus provident.
+          Deserunt quaerat culpa ipsum aspernatur beatae.
+        </p>
+      </div>
     </>
   );
 }
