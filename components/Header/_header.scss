@@ -9,7 +9,7 @@
     z-index: 10;
     top: 0;
     box-shadow: 0 2px 20px 0 rgba(102, 102, 102, 0.07);
-    background-color: blue;
+    background-color: $color-primary;
 
     .site-nav {
       @media (min-width: $mq-mob) {
@@ -35,6 +35,10 @@
     svg {
       vertical-align: middle;
       width: 30px;
+
+      @media (prefers-color-scheme: dark) {
+        fill: $color-white;
+      }
     }
   }
 
