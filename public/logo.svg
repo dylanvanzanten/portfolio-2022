@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="34px" viewBox="0 0 29 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Assets/Brand/Logo/logo-black</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Navigation/Desktop/navigation" transform="translate(-20.000000, -19.000000)" fill="#000000">
+            <g id="Logo---black" transform="translate(20.000000, 19.000000)">
+                <polygon id="Path" points="18.3804035 0 18.3804035 34 29 27.2005997 29 5.95078714"></polygon>
+                <path d="M18.3804035,34 C18.3804035,34 0,26.7613 0,16.5749438 C0,9.99144508 7.45100865,6.37959166 7.45100865,6.37959166 L17.9697406,12.3288795 C17.9697406,12.3288795 9.79827089,14.0635887 9.79827089,21.6756185 C9.79827089,27.3610266 14.2305476,31.3881907 16.7651297,33.0494333 C17.2869061,33.3959856 17.8260987,33.7132931 18.3804035,34 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
