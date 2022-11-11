@@ -16,12 +16,6 @@
         padding-top: 0;
       }
     }
-
-    .header__logo {
-      svg {
-        width: 100px;
-      }
-    }
   }
 
   .container {
@@ -40,12 +34,7 @@
 
     svg {
       vertical-align: middle;
-      width: 150px;
-
-      @media (min-width: $mq-mob) {
-        margin-bottom: 0;
-        width: 200px;
-      }
+      width: 30px;
     }
   }
 
