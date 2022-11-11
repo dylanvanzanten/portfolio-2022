@@ -1,0 +1,38 @@
+//
+// Grid system
+// --------------------------------------------------
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  > .container {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  @media (max-width: $mq-mob) {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    > .container {
+      margin-right: -25px;
+      margin-left: -25px;
+    }
+  }
+  @media (min-width: $mq-mob) {
+    width: $container-sml;
+  }
+  @media (min-width: $mq-tab--sml) {
+    width: $container-med;
+  }
+  @media (min-width: $mq-desk--med) {
+    width: $container-lrg;
+  }
+}
