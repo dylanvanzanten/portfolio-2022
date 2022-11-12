@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 770 577">
+  <defs>
+    <linearGradient x1="51.167%" y1="23.235%" x2="100%" y2="78.076%" id="b">
+      <stop stop-color="#7177D2" stop-opacity=".1" offset="0%"/>
+      <stop stop-color="#7177D2" stop-opacity=".2" offset="100%"/>
+    </linearGradient>
+    <pattern id="d" width="258" height="258" x="-258" y="-258" patternUnits="userSpaceOnUse">
+      <use xlink:href="#a"/>
+    </pattern>
+    <path d="M0 0h769.053l.68.68L770 577c-70.286-217.48-135.63-349.488-196.031-396.02-90.603-69.8-345.264 59.009-476.596 6.07C39.971 163.914 7.513 101.563 0 0Z" id="c"/>
+  </defs>
+  <g transform="rotate(180 385 288.5)" fill-rule="nonzero" fill="none">
+    <use fill="url(#b)" xlink:href="#c"/>
+    <use fill-opacity=".188" fill="url(#d)" style="mix-blend-mode:overlay" xlink:href="#c"/>
+  </g>
+</svg>
