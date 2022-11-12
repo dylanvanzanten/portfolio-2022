@@ -1,3 +1,44 @@
 .hero {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  padding: $spacing-xl;
   background-color: $color-primary;
+
+  &::before,
+  &::after {
+    content: "";
+    background: url("../../public/img/wave.png") no-repeat;
+    position: absolute;
+    height: 577px;
+    width: 770px;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+
+  &__image {
+    align-self: flex-end;
+    z-index: 3;
+
+    img {
+      border-radius: $border-radius-xl;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    font-size: 20px;
+    max-width: 50vw;
+    bottom: $spacing-xxxl;
+    z-index: 5;
+  }
 }
