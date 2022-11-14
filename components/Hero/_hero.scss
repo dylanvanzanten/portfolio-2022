@@ -1,6 +1,4 @@
 .hero {
-  flex-direction: column;
-  display: flex;
   position: relative;
   padding: $spacing-xl;
   background-color: $color-primary;
@@ -31,9 +29,14 @@
     left: 0;
   }
 
+  .container {
+    flex-direction: column;
+    display: flex;
+  }
+
   &__image {
     align-self: flex-end;
-    z-index: 3;
+    z-index: 10;
 
     img {
       border-radius: $border-radius-xl;
@@ -45,6 +48,6 @@
     font-size: 20px;
     max-width: 50vw;
     bottom: $spacing-xxxl;
-    z-index: 5;
+    z-index: 20;
   }
 }
