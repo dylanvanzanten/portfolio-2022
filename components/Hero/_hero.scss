@@ -8,10 +8,16 @@
   &::before,
   &::after {
     content: "";
-    background: url("../../public/img/wave.png") no-repeat;
     position: absolute;
-    height: 577px;
-    width: 770px;
+    background: url("../../public/img/wave.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    height: 100%;
+    width: 100%;
+
+    @media (min-width: $mq-tab--sml) {
+      background-size: auto;
+    }
   }
 
   &::before {
