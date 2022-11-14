@@ -6,20 +6,22 @@ import profilePicture from "../../public/img/dylan.jpg";
 const Hero = ({}) => {
   return (
     <div className="hero">
-      <div className="hero__image">
-        <Image
-          src={profilePicture}
-          alt="Dylan van Zanten"
-          quality={100}
-          style={{
-            maxHeight: "750px",
-            objectFit: "cover",
-          }}
-          placeholder="blur"
-          priority
-        />
-      </div>
       <div className="container">
+        <div className="hero__image">
+          <Image
+            src={profilePicture}
+            alt="Dylan van Zanten"
+            quality={100}
+            style={{
+              maxHeight: "750px",
+              width: "100%",
+              objectFit: "cover",
+            }}
+            placeholder="blur"
+            priority
+          />
+        </div>
+
         <div className="hero__content">
           <h6>Hey, nice to meet you!</h6>
           <h1>I’m Dylan</h1>
