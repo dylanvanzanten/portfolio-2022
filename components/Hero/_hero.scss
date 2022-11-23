@@ -1,42 +1,51 @@
 .hero {
   position: relative;
-  padding: $spacing-xl;
+  padding: $spacing-xl 0;
   background-color: $color-primary;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("../../public/img/wave.png") no-repeat;
-    background-size: 100%;
-    background-position: bottom left;
-    height: 100%;
-    width: 100%;
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background: url("../../public/img/wave.svg") no-repeat;
+  //   background-size: 100%;
+  //   background-position: bottom left;
+  //   height: 100%;
+  //   width: 100%;
+
+  //   @media (min-width: $mq-tab--sml) {
+  //     background-size: auto;
+  //   }
+  // }
+
+  // &::before {
+  //   top: 0;
+  //   right: 0;
+  //   transform: rotate(180deg);
+  // }
+
+  // &::after {
+  //   bottom: 0;
+  //   left: 0;
+  // }
+
+  .container {
+    position: relative;
+    display: flex;
 
     @media (min-width: $mq-tab--sml) {
-      background-size: auto;
+      min-height: 750px;
     }
   }
 
-  &::before {
-    top: 0;
-    right: 0;
-    transform: rotate(180deg);
-  }
-
-  &::after {
-    bottom: 0;
-    left: 0;
-  }
-
-  .container {
-    flex-direction: column;
-    display: flex;
-  }
-
   &__image {
-    align-self: flex-end;
-    z-index: 10;
+    position: absolute;
+    display: none;
+    right: $spacing-sml;
+
+    @media (min-width: $mq-tab--sml) {
+      display: block;
+    }
 
     img {
       border-radius: $border-radius-xl;
@@ -44,10 +53,14 @@
   }
 
   &__content {
-    position: absolute;
+    align-self: flex-end;
     font-size: 20px;
-    max-width: 50vw;
-    bottom: $spacing-xxxl;
-    z-index: 20;
+    width: 100%;
+    order: 1;
+    z-index: 5;
+
+    @media (min-width: $mq-tab--sml) {
+      max-width: 60vw;
+    }
   }
 }

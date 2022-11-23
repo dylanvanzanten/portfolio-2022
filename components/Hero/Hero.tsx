@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import profilePicture from "../../public/img/dylan.jpg";
+import Wave from "../../public/img/wave.svg";
 
 // Component
 const Hero = ({}) => {
@@ -20,6 +21,7 @@ const Hero = ({}) => {
             placeholder="blur"
             priority
           />
+          <Wave />
         </div>
 
         <div className="hero__content">
