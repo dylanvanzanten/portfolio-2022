@@ -10,16 +10,14 @@ import Logo from "/public/logo.svg";
 const Header = ({}) => {
   useEffect(() => {
     const header = document.querySelector(".header");
+    const hero: any = document.querySelector(".hero");
     if (!header) return;
-
     const isSticky = () => {
       const scrollTop = window.scrollY;
-
-      scrollTop >= 50
+      scrollTop >= hero.offsetHeight
         ? header.classList.add("header--sticky")
         : header.classList.remove("header--sticky");
     };
-
     window.addEventListener("scroll", isSticky);
     return () => {
       window.removeEventListener("scroll", isSticky);

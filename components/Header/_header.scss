@@ -2,13 +2,14 @@
   align-items: center;
   display: flex;
   height: 80px;
-  background: transparent;
+  background: $color-black;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  box-shadow: $box-shadow-default--soft;
+  transition: $ease-in $duration-med;
 
   &--sticky {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    box-shadow: 0 2px 20px 0 rgba(102, 102, 102, 0.07);
     background-color: $color-primary;
 
     .site-nav {
@@ -22,6 +23,10 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
+
+    @media (max-width: $mq-tab--sml) {
+      width: 100%;
+    }
   }
 
   &__logo {
