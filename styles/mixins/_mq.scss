@@ -11,6 +11,70 @@
   }
 }
 
+/*
+**  Media query helpers
+*/
+
+@mixin media-xxs {
+  @media (min-width: $bp-xxs) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media (min-width: $bp-xs) {
+    @content;
+  }
+}
+
+@mixin media-s {
+  @media (min-width: $bp-s) {
+    @content;
+  }
+}
+
+@mixin media-portrait {
+  @media (min-width: $bp-portrait) {
+    @content;
+  }
+}
+
+@mixin media-m {
+  @media (min-width: $bp-m) {
+    @content;
+  }
+}
+
+@mixin media-l {
+  @media (min-width: $bp-l) {
+    @content;
+  }
+}
+
+@mixin media-landscape {
+  @media (min-width: $bp-landscape) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (min-width: $bp-xl) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (min-width: $bp-xxl) {
+    @content;
+  }
+}
+
+@mixin media-xxxl {
+  @media (min-width: $bp-xxxl) {
+    @content;
+  }
+}
+
 /**
  * Example:
  *
