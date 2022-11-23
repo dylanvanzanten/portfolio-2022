@@ -79,12 +79,12 @@ body {
 @mixin heading($size) {
   font-size: map-get(
     (
-      h1: 32px,
-      h2: 24px,
-      h3: 24px,
-      h4: 20px,
-      h5: 14px,
-      h6: 12px,
+      h1: 64px,
+      h2: 48px,
+      h3: 36px,
+      h4: 28px,
+      h5: 24px,
+      h6: 20px,
     ),
     $size
   );
@@ -105,12 +105,12 @@ body {
   @include mq($mq-tab--sml) {
     font-size: map-get(
       (
-        h1: 45px,
-        h2: 32px,
-        h3: 24px,
-        h4: 24px,
-        h5: 20px,
-        h6: 16px,
+        h1: 72px,
+        h2: 64px,
+        h3: 48px,
+        h4: 36px,
+        h5: 24px,
+        h6: 20px,
       ),
       $size
     );
@@ -122,20 +122,6 @@ body {
         h4: 1.2,
         h5: 1.2,
         h6: 1.2,
-      ),
-      $size
-    );
-  }
-
-  @include mq($mq-desk--sml) {
-    font-size: map-get(
-      (
-        h1: 60px,
-        h2: 45px,
-        h3: 32px,
-        h4: 24px,
-        h5: 20px,
-        h6: 16px,
       ),
       $size
     );
