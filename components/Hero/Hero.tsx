@@ -25,14 +25,14 @@ const Hero = ({}) => {
         </div>
 
         <div className="hero__content">
-          <h6>Hey, nice to meet you!</h6>
-          <h1>I’m Dylan</h1>
-          <p>
+          <h1>Hey, nice to meet you!</h1>
+          <h6>I’m Dylan</h6>
+          <p className="hero__lead">
             A digital creative with a passion for digital products that involve
             design, branding and code — loves to work in a cross-functional team
             towards a shared vision.
           </p>
-          <a href="#">Get to know me</a>
+          <a href="/about">Get to know me</a>
         </div>
       </div>
     </div>
