@@ -9,8 +9,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: $spacing-sml;
+  padding-right: $spacing-sml;
 
   > .container {
     margin-right: -10px;
@@ -18,20 +18,19 @@
   }
 
   @media (max-width: $mq-mob) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: $spacing-med;
+    padding-right: $spacing-med;
 
     > .container {
-      margin-right: -25px;
-      margin-left: -25px;
+      margin-right: -$spacing-med;
+      margin-left: -$spacing-med;
     }
   }
-  @media (min-width: $mq-mob) {
-    width: $container-sml;
-  }
+
   @media (min-width: $mq-tab--sml) {
     width: $container-med;
   }
+
   @media (min-width: $mq-desk--med) {
     width: $container-lrg;
   }

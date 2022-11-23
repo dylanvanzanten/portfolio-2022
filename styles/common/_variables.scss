@@ -2,11 +2,10 @@
 
 /** Containers */
 $container-xs: 320px;
-$container-sml: 460px;
-$container-med: 890px;
-$container-lrg: 1140px;
-$container-xl: 1440px;
-$container-content: 40em;
+$container-sml: 480px;
+$container-med: 768px;
+$container-lrg: 1200px;
+$container-xl: 1400px;
 
 $containers: (
   xs: $container-xs,
@@ -14,7 +13,6 @@ $containers: (
   med: $container-med,
   lrg: $container-lrg,
   xl: $container-xl,
-  content: $container-content,
 );
 
 /** Block */
