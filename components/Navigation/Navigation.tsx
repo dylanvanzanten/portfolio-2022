@@ -24,15 +24,17 @@ const Navigation = ({}) => {
       </button>
       <div className="site-nav-overlay">
         <div className="site-nav-overlay__container">
-          <h2>Menu</h2>
-          <button
-            className="site-nav-overlay__close"
-            data-is-open={isOpen}
-            onClick={() => setIsopen(!isOpen)}
-            data-site-nav-toggle
-          >
-            <span>Close</span>
-          </button>
+          <div className="container">
+            <h2>Menu</h2>
+            <button
+              className="site-nav-overlay__close"
+              data-is-open={isOpen}
+              onClick={() => setIsopen(!isOpen)}
+              data-site-nav-toggle
+            >
+              <span>Close</span>
+            </button>
+          </div>
         </div>
         <ul className="site-nav__list">
           <li className="site-nav__list-item">
