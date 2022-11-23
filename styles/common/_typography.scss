@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Brando Sans";
+  src: local("Brando Sans Light"), local("BrandoSans-Light"),
+    url("/public/fonts/BrandoSans-Light.woff2") format("woff2"),
+    url("/public/fonts/BrandoSans-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Brando Sans";
+  src: local("Brando Sans SemiBold"), local("BrandoSans-SemiBold"),
+    url("/public/fonts/BrandoSans-SemiBold.woff2") format("woff2"),
+    url("/public/fonts/BrandoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+$font-stack-base: "Brando Sans", Tahoma, sans-serif;
+
+body {
+  color: $color-white;
+  line-height: 1.375;
+}
+
+// Fallbacks
+@mixin font-stack-base {
+  font-family: "Brando Sans", Tahoma, sans-serif;
+}
+
+@mixin text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@mixin text-link {
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@mixin text-xxxl {
+  font-size: 64px;
+}
+
+@mixin text-xxl {
+  font-size: 48px;
+}
+
+@mixin text-xl {
+  font-size: 36px;
+}
+
+@mixin text-l {
+  font-size: 24px;
+}
+
+@mixin text-m {
+  font-size: 18px;
+}
+
+@mixin text-s {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@mixin text-xs {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin text-xxs {
+  font-size: 12px;
+}
+
+@mixin heading($size) {
+  font-size: map-get(
+    (
+      h1: 32px,
+      h2: 24px,
+      h3: 24px,
+      h4: 20px,
+      h5: 14px,
+      h6: 12px,
+    ),
+    $size
+  );
+  line-height: map-get(
+    (
+      h1: 1.45,
+      h2: 1.45,
+      h3: 1.45,
+      h4: 1.45,
+      h5: 1.4,
+      h6: 1.6,
+    ),
+    $size
+  );
+  color: $color-black;
+  font-weight: normal;
+
+  @include mq($mq-tab--sml) {
+    font-size: map-get(
+      (
+        h1: 45px,
+        h2: 32px,
+        h3: 24px,
+        h4: 24px,
+        h5: 20px,
+        h6: 16px,
+      ),
+      $size
+    );
+    line-height: map-get(
+      (
+        h1: 1.1,
+        h2: 1.2,
+        h3: 1.2,
+        h4: 1.2,
+        h5: 1.2,
+        h6: 1.2,
+      ),
+      $size
+    );
+  }
+
+  @include mq($mq-desk--sml) {
+    font-size: map-get(
+      (
+        h1: 60px,
+        h2: 45px,
+        h3: 32px,
+        h4: 24px,
+        h5: 20px,
+        h6: 16px,
+      ),
+      $size
+    );
+  }
+}
+
+// Elements
+
+body,
+input,
+button {
+  @include font-stack-base;
+  color: $color-black;
+}
+
+h1,
+.h1 {
+  @include heading(h1);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+h2,
+.h2 {
+  @include heading(h2);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+h3,
+.h3 {
+  @include heading(h3);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+h4,
+.h4 {
+  @include heading(h4);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+h5,
+.h5 {
+  @include heading(h5);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+h6,
+.h6 {
+  @include heading(h6);
+  margin: 0;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-light;
+}
+
+p {
+  @include text-s;
+  text-decoration: none;
+}
