@@ -3,35 +3,66 @@
 // --------------------------------------------------
 
 // Container widths
-//
-// Set the container width, and override it for fixed navbars in media queries.
+
+[data-container-size="s"] {
+  max-width: 1024px;
+}
+
+[data-container-size="m"] {
+  max-width: 1260px;
+}
+
+[data-container-size="l"] {
+  max-width: 1440px;
+}
+
+[data-container-size="1-xl"] {
+  max-width: 1650px;
+}
+
+[data-container-size="2-xl"] {
+  max-width: 1920px;
+}
+
+[data-span="1"],
+[data-span="2"],
+[data-span="3"],
+[data-span="4"],
+[data-span="5"],
+[data-span="6"],
+[data-span="7"],
+[data-span="8"],
+[data-span="9"],
+[data-span="10"],
+[data-span="11"],
+[data-span="12"] {
+  grid-column: span var(--span) / span var(--span);
+  grid-column-start: var(--start);
+}
 
 .container {
-  margin-right: auto;
+  display: grid;
   margin-left: auto;
-  padding-left: $spacing-sml;
-  padding-right: $spacing-sml;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 32px;
+  padding-left: 32px;
 
-  > .container {
-    margin-right: -10px;
-    margin-left: -10px;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-gap: $spacing-sml;
+
+  @media (min-width: $mq-mob) {
+    grid-template-columns: repeat(6, [col] 1fr);
+  }
+
+  @media (min-width: $mq-tab--sml) {
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-gap: $spacing-xl;
   }
 
   @media (max-width: $mq-mob) {
     padding-left: $spacing-med;
     padding-right: $spacing-med;
-
-    > .container {
-      margin-right: -$spacing-med;
-      margin-left: -$spacing-med;
-    }
-  }
-
-  @media (min-width: $mq-tab--sml) {
-    width: $container-med;
-  }
-
-  @media (min-width: $mq-desk--med) {
-    width: $container-lrg;
   }
 }
