@@ -10,7 +10,7 @@ const toggleScrollLock = (isLocked) => {
     scrollY = window.pageYOffset;
     document.body.style.right = "0px";
     document.body.style.left = "0px";
-    document.body.style.position = "fixed";
+    document.body.style.overflowY = "hidden";
     document.body.dataset.hasScrollLock = true;
 
     if (!siteNav || !siteNavToggle) {
@@ -19,7 +19,7 @@ const toggleScrollLock = (isLocked) => {
     siteNav.style.transform = `translate(-100%, ${scrollY}px)`;
     siteNavToggle.style.transform = `translateY(${scrollY}px)`;
   } else {
-    document.body.style.position = "";
+    document.body.style.overflowY = "";
     document.body.style.top = "";
     document.body.style.right = "";
     document.body.style.left = "";
