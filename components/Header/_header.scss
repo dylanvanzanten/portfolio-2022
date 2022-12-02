@@ -7,7 +7,7 @@
   z-index: 10;
   top: 0;
   box-shadow: $box-shadow-default--soft;
-  transition: $ease-in $duration-med;
+  transition: $ease-in-out $duration-slow;
 
   &--sticky {
     background-color: $color-primary;
