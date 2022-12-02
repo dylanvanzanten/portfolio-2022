@@ -4,3 +4,9 @@ $color-primary: #0f0322;
 // Gray colors
 $color-black: #000;
 $color-white: #fff;
+
+:root {
+  --color-primary: #{$color-primary};
+  --black: #{$color-black};
+  --white: #{$color-white};
+}
