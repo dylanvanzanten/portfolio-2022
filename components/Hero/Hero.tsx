@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import profilePicture from "../../public/img/dylan.jpg";
-import Wave from "../../public/img/wave.svg";
 
 // Component
 const Hero = ({}) => {
   return (
     <div className="hero">
-      <div className="container">
+      <div className="container" data-container-size="l">
         <div className="hero__image">
           <Image
             src={profilePicture}
@@ -21,7 +20,6 @@ const Hero = ({}) => {
             placeholder="blur"
             priority
           />
-          <Wave />
         </div>
 
         <div className="hero__content">

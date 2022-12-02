@@ -2,32 +2,33 @@
   position: relative;
   padding: $spacing-xl 0;
   background-color: $color-primary;
+  margin-bottom: $spacing-xl;
 
-  // &::before,
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background: url("../../public/img/wave.svg") no-repeat;
-  //   background-size: 100%;
-  //   background-position: bottom left;
-  //   height: 100%;
-  //   width: 100%;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("/img/wave.svg") no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    height: 100%;
+    width: 50%;
 
-  //   @media (min-width: $mq-tab--sml) {
-  //     background-size: auto;
-  //   }
-  // }
+    @media (min-width: $mq-tab--sml) {
+      background-size: auto;
+    }
+  }
 
-  // &::before {
-  //   top: 0;
-  //   right: 0;
-  //   transform: rotate(180deg);
-  // }
+  &::before {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
 
-  // &::after {
-  //   bottom: 0;
-  //   left: 0;
-  // }
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
 
   .container {
     position: relative;
@@ -42,6 +43,7 @@
     position: absolute;
     display: none;
     right: $spacing-sml;
+    z-index: 5;
 
     @media (min-width: $mq-tab--sml) {
       display: block;
