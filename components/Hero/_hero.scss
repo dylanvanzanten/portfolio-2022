@@ -1,8 +1,12 @@
 .hero {
   position: relative;
-  padding: $spacing-xl 0;
+  padding: $spacing-xxxl 0;
   background-color: $color-primary;
   margin-bottom: $spacing-xl;
+
+  @media (min-width: $mq-tab--sml) {
+    padding: $spacing-xl;
+  }
 
   &::before,
   &::after {
@@ -12,9 +16,14 @@
     background-size: 100%;
     background-position: bottom left;
     height: 100%;
-    width: 50%;
+    width: 100%;
+
+    @media (min-width: $mq-mob--lrg) {
+      width: 50%;
+    }
 
     @media (min-width: $mq-tab--sml) {
+      width: 40%;
       background-size: auto;
     }
   }
