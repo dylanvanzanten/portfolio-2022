@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
 
 import Header from "../components/Header/Header";
@@ -38,12 +37,12 @@ export default function Home() {
       </div>
 
       <script
-        type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        async
       ></script>
       <script
-        noModule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        async
       ></script>
     </>
   );
