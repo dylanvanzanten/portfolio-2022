@@ -15,6 +15,20 @@ $containers: (
   xl: $container-xl,
 );
 
+/*
+** Breakpoints
+*/
+$bp-xxs: 375px;
+$bp-xs: 416px;
+$bp-s: 640px; // portrait
+$bp-portrait: 768px; // portrait
+$bp-m: 864px; // portrait
+$bp-landscape: 1024px;
+$bp-l: 1080px; // desktop ignore on gdpr
+$bp-xl: 1280px;
+$bp-xxl: 1440px;
+$bp-xxxl: 1600px;
+
 /** Block */
 $spacing-base: 8px;
 $spacing-xxxs: $spacing-base * 0.25; // 2px
