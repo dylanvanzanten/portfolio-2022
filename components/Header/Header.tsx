@@ -11,7 +11,7 @@ const Header = ({}) => {
   useEffect(() => {
     const header = document.querySelector(".header");
     const hero: any = document.querySelector(".hero");
-    if (!header) return;
+    if (!header || !hero) return;
     const isSticky = () => {
       const scrollTop = window.scrollY;
       scrollTop >= hero.offsetHeight
