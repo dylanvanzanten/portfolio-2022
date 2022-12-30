@@ -16,7 +16,11 @@ export default function Home() {
       <Header />
       <Hero />
       <div className="container" data-container-size="l">
-        <CaseTeaser caseTitle={"CoBuurt"} caseColor={"green"} />
+        <CaseTeaser
+          caseTitle={"CoBuurt"}
+          caseColor={"green"}
+          caseLink={"/projects/cobuurt"}
+        />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"red"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"blue"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"green"} />
