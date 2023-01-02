@@ -26,7 +26,7 @@ export default function Home() {
 
         <section
           className="section-content"
-          style={{ ["--span"]: 7, ["--start"]: 2 }}
+          style={{ ["--span"]: 7, ["--start"]: 1 }}
           data-span="7"
         >
           <p>
@@ -38,7 +38,7 @@ export default function Home() {
         </section>
         <section
           className="section-content"
-          style={{ ["--span"]: 12, ["--start"]: 0 }}
+          style={{ ["--span"]: 12, ["--start"]: 1 }}
           data-span="12"
         >
           <ContactTeaser />

@@ -28,7 +28,11 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
   caseLinkIcon = <ion-icon name="arrow-forward-outline" />,
 }) => {
   return (
-    <div className="case-teaser" data-span="12" style={{ ["--span"]: 12 }}>
+    <div
+      className="case-teaser"
+      data-span="12"
+      style={{ ["--span"]: 12, ["--start"]: 1 }}
+    >
       <div className="case-teaser__image" style={{ background: caseColor }}>
         <Image
           alt={caseImageAlt}

@@ -1,19 +1,15 @@
 .case-teaser {
   grid-column: span 11 / span 11;
-  grid-column-start: 2;
+  grid-column-start: 1;
 
   @media (min-width: $mq-tab--sml) {
-    grid-column: span 5 / span 5;
+    grid-column: span 6 / span 6;
     grid-column-start: 7;
   }
 
   &:nth-child(2n + 1) {
     grid-column-start: 1;
     margin-top: $spacing-64;
-
-    @media (min-width: $mq-tab--sml) {
-      grid-column-start: 2;
-    }
   }
 
   &__image {
