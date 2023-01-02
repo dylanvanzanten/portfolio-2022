@@ -15,9 +15,7 @@ $containers: (
   xl: $container-xl,
 );
 
-/*
-** Breakpoints
-*/
+/** Breakpoints */
 $bp-xxs: 375px;
 $bp-xs: 416px;
 $bp-s: 640px; // portrait
@@ -31,29 +29,34 @@ $bp-xxxl: 1600px;
 
 /** Block */
 $spacing-base: 8px;
-$spacing-xxxs: $spacing-base * 0.25; // 2px
-$spacing-xxs: $spacing-base * 0.5; // 4px
-$spacing-xs: $spacing-base; // 8px
-$spacing-sml: $spacing-base * 2; // 16px
-$spacing-sml-temp: 20px; // TODO: refactor
-$spacing-med: $spacing-base * 3; // 24px
-$spacing-med-temp: 30px; // TODO: refactor
-$spacing-lrg: $spacing-base * 6; // 48px
-$spacing-xl: $spacing-base * 8; // 64px
-$spacing-xxl: $spacing-base * 12; // 96px
-$spacing-xxxl: $spacing-base * 16; // 128px
-$spacing-xxxxl: $spacing-base * 24; // 192px
+$spacing-2: $spacing-base * 0.25; // 2px
+$spacing-4: $spacing-base * 0.5; // 4px
+$spacing-8: $spacing-base; // 8px
+$spacing-16: $spacing-base * 2; // 16px
+$spacing-24: $spacing-base * 3; // 24px
+$spacing-32: $spacing-base * 4; // 32px
+$spacing-40: $spacing-base * 5; // 40px
+$spacing-48: $spacing-base * 6; // 48px
+$spacing-56: $spacing-base * 7; // 56px
+$spacing-64: $spacing-base * 8; // 64px
+$spacing-96: $spacing-base * 12; // 96px
+$spacing-128: $spacing-base * 16; // 128px
+$spacing-192: $spacing-base * 24; // 192px
 
 $spacings: (
-  xxxs: $spacing-xxxs,
-  xxs: $spacing-xxs,
-  xs: $spacing-xs,
-  sml: $spacing-sml,
-  med: $spacing-med,
-  lrg: $spacing-lrg,
-  xl: $spacing-xl,
-  xxl: $spacing-xxl,
-  xxxl: $spacing-xxxl,
+  2: $spacing-2,
+  4: $spacing-4,
+  8: $spacing-8,
+  16: $spacing-16,
+  24: $spacing-24,
+  32: $spacing-32,
+  40: $spacing-40,
+  48: $spacing-48,
+  56: $spacing-56,
+  64: $spacing-64,
+  96: $spacing-96,
+  128: $spacing-128,
+  192: $spacing-192,
 );
 
 /** Font weights */

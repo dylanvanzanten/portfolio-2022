@@ -138,14 +138,14 @@ button {
 }
 
 .section-content {
-  margin-top: $spacing-xl;
+  margin-top: $spacing-64;
 }
 
 h1,
 .h1 {
   @include heading(h1);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 
@@ -153,7 +153,7 @@ h2,
 .h2 {
   @include heading(h2);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 
@@ -161,7 +161,7 @@ h3,
 .h3 {
   @include heading(h3);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 
@@ -169,7 +169,7 @@ h4,
 .h4 {
   @include heading(h4);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 
@@ -177,7 +177,7 @@ h5,
 .h5 {
   @include heading(h5);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 
@@ -185,7 +185,7 @@ h6,
 .h6 {
   @include heading(h6);
   margin: 0;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-8;
   font-weight: $font-weight-light;
 }
 

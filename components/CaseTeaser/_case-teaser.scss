@@ -9,7 +9,7 @@
 
   &:nth-child(2n + 1) {
     grid-column-start: 1;
-    margin-top: $spacing-xl;
+    margin-top: $spacing-64;
 
     @media (min-width: $mq-tab--sml) {
       grid-column-start: 2;
@@ -17,34 +17,34 @@
   }
 
   &__image {
-    padding: $spacing-sml 0 $spacing-sml $spacing-sml;
+    padding: $spacing-16 0 $spacing-16 $spacing-16;
 
     @media (min-width: $mq-tab--sml) {
-      padding: $spacing-xl 0 $spacing-xl $spacing-xl;
+      padding: $spacing-64 0 $spacing-64 $spacing-64;
     }
   }
 
   &__title {
     @include heading(h4);
-    margin-top: $spacing-med;
+    margin-top: $spacing-24;
   }
 
   &__content {
-    margin: 0 0 $spacing-sml 0;
+    margin: 0 0 $spacing-16 0;
   }
 
   &__tags {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0 0 $spacing-med 0;
+    margin: 0 0 $spacing-24 0;
 
     &-item {
-      margin-right: $spacing-base;
+      margin-right: $spacing-8;
 
       &:not(:last-child)::after {
         content: "\02be";
-        margin-left: $spacing-base;
+        margin-left: $spacing-8;
         height: 10px;
         display: inline-block;
         vertical-align: middle;

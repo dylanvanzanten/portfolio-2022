@@ -1,11 +1,11 @@
 .hero {
   position: relative;
-  padding: $spacing-xxxl 0;
+  padding: $spacing-128 0;
   background-color: $color-primary;
-  margin-bottom: $spacing-xl;
+  margin-bottom: $spacing-64;
 
   @media (min-width: $mq-tab--sml) {
-    padding: $spacing-xl;
+    padding: $spacing-64;
   }
 
   &::before,
@@ -51,7 +51,7 @@
   &__image {
     position: absolute;
     display: none;
-    right: $spacing-sml;
+    right: $spacing-16;
     z-index: 5;
 
     @media (min-width: $mq-tab--sml) {

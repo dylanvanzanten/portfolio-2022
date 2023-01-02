@@ -47,10 +47,9 @@
   width: 100%;
   padding-right: 32px;
   padding-left: 32px;
-
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
-  grid-gap: $spacing-sml;
+  grid-gap: $spacing-16;
 
   @media (min-width: $mq-mob) {
     grid-template-columns: repeat(6, [col] 1fr);
@@ -58,11 +57,11 @@
 
   @media (min-width: $mq-tab--sml) {
     grid-template-columns: repeat(12, [col] 1fr);
-    grid-gap: $spacing-xl;
+    grid-gap: $spacing-64;
   }
 
   @media (max-width: $mq-mob) {
-    padding-left: $spacing-med;
-    padding-right: $spacing-med;
+    padding-left: $spacing-24;
+    padding-right: $spacing-24;
   }
 }
