@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import CaseTeaser from "../components/CaseTeaser/CaseTeaser";
+import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 
 export default function Home() {
   return (
@@ -22,8 +23,7 @@ export default function Home() {
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"red"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"blue"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"green"} />
-      </div>
-      <div className="container" data-container-size="l">
+
         <section
           className="section-content"
           style={{ ["--span"]: 7, ["--start"]: 2 }}
@@ -35,6 +35,13 @@ export default function Home() {
             voluptates, facere amet excepturi nostrum voluptatibus provident.
             Deserunt quaerat culpa ipsum aspernatur beatae.
           </p>
+        </section>
+        <section
+          className="section-content"
+          style={{ ["--span"]: 10, ["--start"]: 2 }}
+          data-span="10"
+        >
+          <ContactTeaser />
         </section>
       </div>
 
