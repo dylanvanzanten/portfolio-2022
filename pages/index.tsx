@@ -38,8 +38,8 @@ export default function Home() {
         </section>
         <section
           className="section-content"
-          style={{ ["--span"]: 10, ["--start"]: 2 }}
-          data-span="10"
+          style={{ ["--span"]: 12, ["--start"]: 0 }}
+          data-span="12"
         >
           <ContactTeaser />
         </section>

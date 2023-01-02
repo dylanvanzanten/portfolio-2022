@@ -1,0 +1,16 @@
+.contact-teaser {
+  color: $color-white;
+  background: url("/img/wave-contact.svg") no-repeat $color-primary;
+  background-size: 130%;
+  background-position: center;
+  padding: $spacing-32 $spacing-64;
+  border-radius: $border-radius-xl;
+
+  @media (min-width: $mq-tab--sml) {
+    background-size: 130%;
+    padding: $spacing-128 $spacing-64;
+  }
+
+  &__content {
+  }
+}
