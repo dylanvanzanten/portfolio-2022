@@ -7,7 +7,7 @@ const ContactTeaser = () => {
         <div className="contact-teaser__content">
           <h3></h3>
           <p></p>
-          <Link href="/about">Get to know me</Link>
+          <Link href="/contact">Get to know me</Link>
         </div>
       </div>
     </>
