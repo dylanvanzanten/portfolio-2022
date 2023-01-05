@@ -1,0 +1,135 @@
+$btn-height: 60px;
+
+a.button {
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
+.button {
+  align-self: flex-start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: $btn-height;
+  padding: $spacing-8 $spacing-16;
+  color: $color-black;
+  background-color: $color-white;
+  border: none;
+  border-radius: $border-radius-med;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration-fast $ease-out-quart,
+    color $duration-fast $ease-out-quart;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-black;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+    }
+
+    &:disabled {
+      &:hover,
+      &:focus {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+      background-color: $color-black;
+    }
+
+    &:disabled {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $color-black;
+      }
+    }
+  }
+
+  &--icon {
+    position: static;
+    height: $spacing-24;
+    width: $spacing-24;
+    min-width: auto;
+    box-shadow: $box-shadow-default--soft;
+    border-radius: 100%;
+
+    .button__icon {
+      position: relative;
+      width: $spacing-24;
+      height: $spacing-24;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $spacing-24;
+        height: $spacing-24;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &--text {
+    background-color: transparent;
+  }
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @include mq($mq-tab--sml) {
+    flex-direction: row;
+    align-items: center;
+
+    &--right {
+      justify-content: flex-end;
+
+      .button {
+        width: auto;
+      }
+    }
+  }
+
+  .button + .button {
+    margin-top: $spacing-32;
+
+    @include mq($mq-tab--sml) {
+      margin-top: 0;
+      margin-left: $spacing-32;
+    }
+  }
+}
