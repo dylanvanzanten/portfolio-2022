@@ -6,11 +6,7 @@ a.button {
 }
 
 .button {
-  align-self: flex-start;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   max-width: 100%;
   max-height: $btn-height;
   padding: $spacing-8 $spacing-16;
@@ -78,12 +74,12 @@ a.button {
   }
 
   &--icon {
-    position: static;
-    height: $spacing-24;
-    width: $spacing-24;
-    min-width: auto;
-    box-shadow: $box-shadow-default--soft;
-    border-radius: 100%;
+    vertical-align: middle;
+
+    ion-icon {
+      vertical-align: middle;
+	  margin-left: $spacing-8;
+    }
 
     .button__icon {
       position: relative;
