@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import CaseTeaser from "../components/CaseTeaser/CaseTeaser";
 import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
           <ContactTeaser />
         </section>
       </div>
+      <Footer />
 
       <script
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

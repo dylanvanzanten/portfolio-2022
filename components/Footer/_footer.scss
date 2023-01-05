@@ -1,0 +1,40 @@
+.footer {
+  padding: $spacing-64 0;
+  color: $color-black;
+  background: $color-white;
+
+  .container {
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 0;
+    display: flex;
+    max-width: 1440px;
+  }
+
+  &__logo {
+    position: relative;
+    margin-right: auto;
+
+    @media (min-width: $mq-mob) {
+      margin-right: 0;
+    }
+
+    svg {
+      vertical-align: middle;
+      width: 30px;
+
+      @media (prefers-color-scheme: dark) {
+        fill: $color-black;
+      }
+    }
+  }
+
+  &__home-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0;
+  }
+}
