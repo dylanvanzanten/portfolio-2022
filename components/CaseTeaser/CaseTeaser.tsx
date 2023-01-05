@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import Emoji from "react-emojis";
-import Link from "next/link";
+
+import Button from "../Button/Button";
 
 type ICaseTeaserProps = {
   caseColor?: string;
@@ -64,10 +65,13 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
             </li>
           ))}
         </ul>
-
-        <Link className="case-teaser__link" href={caseLink}>
-          View project <span>{caseLinkIcon}</span>
-        </Link>
+        <Button
+          type="icon"
+          label={`View project`}
+          icon={caseLinkIcon}
+          element="link"
+          href="/contact"
+        />
       </div>
     </div>
   );
