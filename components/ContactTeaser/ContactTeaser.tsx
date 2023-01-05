@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "../Button/Button";
 
 const ContactTeaser = () => {
   return (
@@ -11,7 +11,7 @@ const ContactTeaser = () => {
             looking for new opportunities or just to catch up. If you&apos;d
             like to get in touch, just shoot me an message!
           </p>
-          <Link href="/contact">Get to know me</Link>
+          <Button label={`Let's talk!`} element="link" href="/contact" />
         </div>
       </div>
     </>

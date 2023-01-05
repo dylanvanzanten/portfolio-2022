@@ -2,13 +2,14 @@
   color: $color-white;
   background: url("/img/wave-contact.svg") no-repeat $color-primary;
   background-size: 150%;
-  background-position: left;
+  background-position: bottom;
   padding: $spacing-32 $spacing-16;
   border-radius: $border-radius-xl;
 
   @media (min-width: $mq-tab--sml) {
     padding: $spacing-64 $spacing-32;
     background-size: 120%;
+    background-position: left;
   }
 
   @media (min-width: $mq-desk--lrg) {
@@ -16,6 +17,8 @@
   }
 
   &__content {
+    flex-direction: column;
+    display: flex;
     max-width: 100%;
 
     @media (min-width: $mq-tab--sml) {
