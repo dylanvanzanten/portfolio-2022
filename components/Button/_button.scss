@@ -99,6 +99,21 @@ a.button {
 
   &--text {
     background-color: transparent;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+      background-color: transparent;
+    }
+
+    &:disabled {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $color-black;
+      }
+    }
 
     ion-icon {
       vertical-align: middle;
