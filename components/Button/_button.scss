@@ -81,9 +81,19 @@ a.button {
   &--icon {
     vertical-align: middle;
 
+    &:hover,
+    &:focus {
+      .button__icon {
+        ion-icon {
+          transform: translateX(5px);
+        }
+      }
+    }
+
     ion-icon {
       vertical-align: middle;
       margin-left: $spacing-8;
+      transition: transform 0.3s ease;
     }
 
     .button__icon {
@@ -110,6 +120,12 @@ a.button {
     &:focus {
       color: $color-white;
       background-color: transparent;
+
+      .button__icon {
+        ion-icon {
+          transform: translateX(5px);
+        }
+      }
     }
 
     &:disabled {
@@ -123,6 +139,7 @@ a.button {
     ion-icon {
       vertical-align: middle;
       margin-left: $spacing-8;
+      transition: all 0.3s ease;
     }
   }
 }
