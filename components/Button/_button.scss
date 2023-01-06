@@ -24,6 +24,7 @@ a.button {
   &:focus {
     color: $color-white;
     background-color: $color-black;
+    box-shadow: 0 0 0 3px $color-white;
   }
 
   &:disabled {
@@ -34,6 +35,10 @@ a.button {
     &:focus {
       background-color: $color-white;
     }
+  }
+
+  label {
+    cursor: pointer;
   }
 
   &--primary {
