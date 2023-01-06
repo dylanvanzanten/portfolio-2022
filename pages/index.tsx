@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from "react";
+
 import Head from "next/head";
 
 // Components
@@ -8,13 +10,34 @@ import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!heroRef.current || !headerRef.current) return;
+
+      if (window.scrollY >= heroRef.current.offsetHeight) {
+        headerRef.current.classList.add("header--sticky");
+      } else {
+        headerRef.current.classList.remove("header--sticky");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Head>
         <title></title>
       </Head>
-      <Header />
-      <Hero />
+      <Header innerRef={headerRef} />
+      <Hero innerRef={heroRef} />
       <div className="container" data-container-size="l">
         <CaseTeaser
           caseTitle={"CoBuurt"}

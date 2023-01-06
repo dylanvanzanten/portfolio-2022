@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Components
 import Navigation from "../Navigation/Navigation";
@@ -7,25 +7,9 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "/public/logo.svg";
 
 // Component
-const Header = ({}) => {
-  useEffect(() => {
-    const header = document.querySelector(".header");
-    const hero: any = document.querySelector(".hero");
-    if (!header || !hero) return;
-    const isSticky = () => {
-      const scrollTop = window.scrollY;
-      scrollTop >= hero.offsetHeight
-        ? header.classList.add("header--sticky")
-        : header.classList.remove("header--sticky");
-    };
-    window.addEventListener("scroll", isSticky);
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  });
-
+const Header = ({ innerRef }) => {
   return (
-    <header className="header">
+    <header className="header" ref={innerRef}>
       <div className="container">
         <span className="header__logo">
           <Logo />

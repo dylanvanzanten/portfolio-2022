@@ -3,9 +3,9 @@ import Image from "next/image";
 import profilePicture from "../../public/img/dylan.jpg";
 
 // Component
-const Hero = ({}) => {
+const Hero = ({ innerRef }) => {
   return (
-    <div className="hero">
+    <div className="hero" ref={innerRef}>
       <div className="container" data-container-size="l">
         <div className="hero__image">
           <Image
