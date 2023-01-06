@@ -23,7 +23,7 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
   caseImageAlt = "Placeholder image",
   caseIcon = <Emoji emoji="man-superhero" />,
   caseTitle = "A project title",
-  caseContent = "Learn platform where self-builders can connect and learn from experienced co-housing experts.",
+  caseContent = "Project content here",
   caseTags = ["Branding", "Design", "Development"],
   caseLink = "https://dylanvanzanten.nl.nl",
   caseLinkIcon = <ion-icon name="arrow-forward-outline" />,
