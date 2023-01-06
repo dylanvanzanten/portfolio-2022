@@ -78,7 +78,7 @@ a.button {
 
     ion-icon {
       vertical-align: middle;
-	  margin-left: $spacing-8;
+      margin-left: $spacing-8;
     }
 
     .button__icon {
@@ -99,6 +99,11 @@ a.button {
 
   &--text {
     background-color: transparent;
+
+    ion-icon {
+      vertical-align: middle;
+      margin-left: $spacing-8;
+    }
   }
 }
 
