@@ -3,6 +3,11 @@
   color: $color-black;
   background: $color-white;
 
+  @media (prefers-color-scheme: dark) {
+    color: $color-white;
+    background: $color-black;
+  }
+
   .container {
     align-items: center;
     flex-direction: column;
@@ -23,7 +28,7 @@
       width: 30px;
 
       @media (prefers-color-scheme: dark) {
-        fill: $color-black;
+        fill: $color-white;
       }
     }
   }
