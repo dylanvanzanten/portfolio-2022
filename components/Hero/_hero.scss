@@ -81,6 +81,15 @@
       @include heading(h1);
       color: $color-white;
     }
+
+    .button {
+      color: $color-white;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
   }
 
   &__lead {
