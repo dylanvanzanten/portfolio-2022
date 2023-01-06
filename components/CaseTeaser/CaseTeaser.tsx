@@ -70,7 +70,7 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
           label={`View project`}
           icon={caseLinkIcon}
           element="link"
-          href="/contact"
+          href={caseLink}
         />
       </div>
     </div>

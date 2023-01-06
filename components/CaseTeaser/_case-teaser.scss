@@ -38,13 +38,14 @@
 
     &-item {
       margin-right: $spacing-8;
+      font-weight: $font-weight-bold;
 
       &:not(:last-child)::after {
         content: "\02be";
         margin-left: $spacing-8;
         height: 10px;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: sub;
       }
     }
   }
