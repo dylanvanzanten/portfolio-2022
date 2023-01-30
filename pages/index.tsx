@@ -70,6 +70,7 @@ export default function Home() {
       <script
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
         async
+        type="module"
       ></script>
       <script
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
