@@ -5,7 +5,7 @@ const ContactTeaser = () => {
     <>
       <div className="contact-teaser">
         <div className="contact-teaser__content">
-          <h3>Interested?</h3>
+          <h1>Interested?</h1>
           <p>
             I&apos;m happy to talk about a possible project, working together,
             looking for new opportunities or just to catch up. If you&apos;d

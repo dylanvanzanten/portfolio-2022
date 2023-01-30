@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title></title>
+        <title>Portfolio | 🦸🏻‍♂️ Dylan van Zanten</title>
       </Head>
       <Header innerRef={headerRef} />
       <Hero innerRef={heroRef} />
@@ -66,16 +66,6 @@ export default function Home() {
         </section>
       </div>
       <Footer />
-
-      <script
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        async
-        type="module"
-      ></script>
-      <script
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        async
-      ></script>
     </>
   );
 }

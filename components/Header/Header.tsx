@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // Components
 import Navigation from "../Navigation/Navigation";
@@ -13,9 +14,9 @@ const Header = ({ innerRef }) => {
       <div data-grid data-cols="12" className="container">
         <span className="header__logo">
           <Logo />
-          <a className="header__home-link" href="">
+          <Link className="header__home-link" href="/">
             Go home
-          </a>
+          </Link>
         </span>
         <Navigation />
       </div>

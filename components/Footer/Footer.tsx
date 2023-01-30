@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // Resources
 import Logo from "/public/logo.svg";
 
@@ -8,9 +10,9 @@ const Footer = () => {
       <div data-grid data-cols="12" className="container">
         <span className="footer__logo">
           <Logo />
-          <a className="footer__home-link" href="">
+          <Link className="footer__home-link" href="/">
             Go home
-          </a>
+          </Link>
         </span>
         <p>
           &copy; Copyleft {footercopy.getFullYear()} — website is in tinkering

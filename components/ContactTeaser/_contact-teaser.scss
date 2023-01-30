@@ -25,12 +25,13 @@
       max-width: 750px;
     }
 
-    h3 {
+    h1 {
+      @include heading(h3);
       color: $color-white;
     }
 
-		.button {
-			align-self: flex-start;
-		}
+    .button {
+      align-self: flex-start;
+    }
   }
 }

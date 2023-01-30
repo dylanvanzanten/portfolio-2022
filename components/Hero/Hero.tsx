@@ -25,12 +25,15 @@ const Hero = ({ innerRef }) => {
             }}
             placeholder="blur"
             priority
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
           />
         </div>
 
         <div className="hero__content">
           <h1>Hey, nice to meet you!</h1>
-          <h6>I’m Dylan</h6>
+          <h2>I’m Dylan</h2>
           <p className="hero__lead">
             A digital creative with a passion for digital products that involve
             design, branding and code — loves to work in a cross-functional team
