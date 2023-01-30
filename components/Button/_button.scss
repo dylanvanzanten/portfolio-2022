@@ -6,6 +6,7 @@ a.button {
 }
 
 .button {
+  align-self: flex-start;
   position: relative;
   max-width: 100%;
   max-height: $btn-height;
