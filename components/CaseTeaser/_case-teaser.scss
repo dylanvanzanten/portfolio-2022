@@ -2,6 +2,8 @@
   grid-column: span 11 / span 11;
   grid-column-start: 1;
   margin-top: $spacing-64;
+  text-decoration: none;
+  color: inherit;
 
   @media (min-width: $mq-tab--sml) {
     grid-column: span 5 / span 5;
@@ -14,9 +16,21 @@
     margin-top: $spacing-64;
   }
 
+  &__inner {
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      .case-teaser__image {
+        transform: scale(1.03);
+      }
+    }
+  }
+
   &__image {
     padding: $spacing-16 0 $spacing-16 $spacing-16;
     border-radius: $border-radius-med;
+    transition: $duration-med;
 
     @media (min-width: $mq-tab--sml) {
       padding: $spacing-64 0 $spacing-64 $spacing-64;

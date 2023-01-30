@@ -7,7 +7,12 @@ import Button from "../Button/Button";
 const Hero = ({ innerRef }) => {
   return (
     <div className="hero" ref={innerRef}>
-      <div className="container" data-container-size="l">
+      <div
+        data-grid
+        data-cols="12"
+        className="container"
+        data-container-size="l"
+      >
         <div className="hero__image">
           <Image
             src={profilePicture}
