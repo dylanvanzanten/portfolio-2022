@@ -47,7 +47,7 @@
   padding: 0 $spacing-16;
   width: 100%;
   grid-template-columns: repeat(4, [col] 1fr);
-  grid-gap: $spacing-16;
+  grid-gap: $spacing-16 0;
 
   @media (min-width: $mq-tab--sml) {
     grid-template-columns: repeat(8, [col] 1fr);
