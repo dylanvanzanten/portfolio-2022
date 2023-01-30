@@ -10,7 +10,7 @@ import Logo from "/public/logo.svg";
 const Header = ({ innerRef }) => {
   return (
     <header className="header" ref={innerRef}>
-      <div className="container">
+      <div data-grid data-cols="12" className="container">
         <span className="header__logo">
           <Logo />
           <a className="header__home-link" href="">

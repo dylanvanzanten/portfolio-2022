@@ -4,13 +4,13 @@
   margin-top: $spacing-64;
 
   @media (min-width: $mq-tab--sml) {
-    grid-column: span 6 / span 6;
+    grid-column: span 5 / span 5;
     grid-column-start: 7;
     margin-top: 0;
   }
 
   &:nth-child(2n + 1) {
-    grid-column-start: 1;
+    grid-column-start: 2;
     margin-top: $spacing-64;
   }
 
@@ -50,7 +50,7 @@
       &:not(:last-child)::after {
         content: "\02be";
         margin-left: $spacing-8;
-        height: 10px;
+        height: 14px;
         display: inline-block;
         vertical-align: sub;
       }

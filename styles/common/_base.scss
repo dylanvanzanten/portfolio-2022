@@ -30,5 +30,17 @@ img {
 }
 
 .section-content {
+  grid-column: span 11 / span 11;
+  grid-column-start: 1;
   margin-top: $spacing-64;
+
+  @media (min-width: $mq-tab--sml) {
+    grid-column: span 10 / span 10;
+    grid-column-start: 2;
+
+    &[data-text] {
+      grid-column: span 7 / span 7;
+      grid-column-start: 2;
+    }
+  }
 }

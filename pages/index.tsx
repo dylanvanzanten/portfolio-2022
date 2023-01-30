@@ -38,7 +38,12 @@ export default function Home() {
       </Head>
       <Header innerRef={headerRef} />
       <Hero innerRef={heroRef} />
-      <div className="container" data-container-size="l">
+      <div
+        data-grid
+        data-container-size="l"
+        data-cols="12"
+        className="container"
+      >
         <CaseTeaser
           caseTitle={"CoBuurt"}
           caseColor={"green"}
@@ -48,11 +53,7 @@ export default function Home() {
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"blue"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"green"} />
 
-        <section
-          className="section-content"
-          style={{ ["--span"]: 7, ["--start"]: 1 }}
-          data-span="7"
-        >
+        <section data-text className="section-content">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
             modi rem architecto labore, voluptate ducimus sapiente, nihil
@@ -60,11 +61,7 @@ export default function Home() {
             Deserunt quaerat culpa ipsum aspernatur beatae.
           </p>
         </section>
-        <section
-          className="section-content"
-          style={{ ["--span"]: 12, ["--start"]: 1 }}
-          data-span="12"
-        >
+        <section className="section-content">
           <ContactTeaser />
         </section>
       </div>

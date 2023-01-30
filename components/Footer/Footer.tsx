@@ -5,7 +5,7 @@ const Footer = () => {
   const footercopy = new Date();
   return (
     <footer className="footer">
-      <div className="container">
+      <div data-grid data-cols="12" className="container">
         <span className="footer__logo">
           <Logo />
           <a className="footer__home-link" href="">

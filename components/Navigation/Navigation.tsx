@@ -24,7 +24,7 @@ const Navigation = ({}) => {
       </button>
       <div className="site-nav-overlay">
         <div className="site-nav-overlay__container">
-          <div className="container">
+          <div data-grid data-cols="12" className="container">
             <h2>Menu</h2>
             <button
               className="site-nav-overlay__close"
