@@ -1,10 +1,20 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 import profilePicture from "../../public/img/dylan.jpg";
 import Button from "../Button/Button";
 
+import { IoIosArrowRoundForward } from "react-icons/io";
+
+type IHeroProps = {
+  innerRef?: any;
+  heroIcon?: any;
+};
+
 // Component
-const Hero = ({ innerRef }) => {
+const Hero: FC<IHeroProps> = ({
+  innerRef,
+  heroIcon = <IoIosArrowRoundForward />,
+}) => {
   return (
     <div className="hero" ref={innerRef}>
       <div
@@ -42,7 +52,7 @@ const Hero = ({ innerRef }) => {
           <Button
             type="text"
             label={`Get to know me`}
-            icon={<ion-icon name="arrow-forward-outline" />}
+            icon={heroIcon}
             element="link"
             href="/about"
           />

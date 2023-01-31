@@ -1,10 +1,26 @@
 // Libs
-import React from "react";
+import React, { FC } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 
+type IButtonProps = {
+  classNames?: string;
+  element?: any;
+  label?: string;
+  type?: any;
+  buttonType?: any;
+  href?: any;
+  tstId?: any;
+  icon?: any;
+  handleClick?: any;
+  target?: any;
+  isLoading?: any;
+  disabled?: any;
+  isDisabled?: any;
+};
+
 // Component
-const Button = ({
+const Button: FC<IButtonProps> = ({
   classNames,
   element,
   label,

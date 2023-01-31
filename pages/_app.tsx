@@ -18,12 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:site_name" content="" />
       </Head>
       <Component {...pageProps} />
-      <Script
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        async
-        defer
-        type="module"
-      />
     </>
   );
 }

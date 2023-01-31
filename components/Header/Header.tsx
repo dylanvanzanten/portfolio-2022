@@ -8,7 +8,7 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "/public/logo.svg";
 
 // Component
-const Header = ({ innerRef }) => {
+const Header = ({ innerRef }: { innerRef: any }) => {
   return (
     <header className="header" ref={innerRef}>
       <div data-grid data-cols="12" className="container">

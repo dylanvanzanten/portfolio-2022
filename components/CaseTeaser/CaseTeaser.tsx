@@ -26,7 +26,7 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
   caseContent = "Project content here",
   caseTags = ["Branding", "Design", "Development"],
   caseLink = "https://dylanvanzanten.nl.nl",
-  caseLinkIcon = <ion-icon name="arrow-forward-outline" />,
+  // caseLinkIcon = <ion-icon name="arrow-forward-outline" />,
 }) => {
   return (
     <a className="case-teaser" href={caseLink}>
