@@ -88,8 +88,6 @@ body {
     ),
     $size
   );
-  color: $color-black;
-  font-weight: normal;
 
   @include mq($mq-tab--sml) {
     font-size: map-get(
@@ -140,7 +138,6 @@ h1,
   @include heading(h1);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 h2,
@@ -148,7 +145,6 @@ h2,
   @include heading(h2);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 h3,
@@ -156,7 +152,6 @@ h3,
   @include heading(h3);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 h4,
@@ -164,7 +159,6 @@ h4,
   @include heading(h4);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 h5,
@@ -172,7 +166,6 @@ h5,
   @include heading(h5);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 h6,
@@ -180,7 +173,6 @@ h6,
   @include heading(h6);
   margin: 0;
   margin-bottom: $spacing-8;
-  font-weight: $font-weight-light;
 }
 
 p {

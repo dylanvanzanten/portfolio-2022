@@ -1,6 +1,7 @@
 .case-teaser {
   grid-column: span 11 / span 11;
   grid-column-start: 1;
+  align-self: flex-start;
   margin-top: $spacing-64;
   text-decoration: none;
   color: inherit;
@@ -56,6 +57,10 @@
     list-style: none;
     padding: 0;
     margin: 0 0 $spacing-24 0;
+
+    @media (min-width: $mq-tab--sml) {
+      margin: 0;
+    }
 
     &-item {
       margin-right: $spacing-8;
