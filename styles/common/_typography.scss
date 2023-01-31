@@ -1,27 +1,13 @@
-@font-face {
-  font-family: "Mark Pro";
-  src: local("Mark Pro"), local("MarkPro"),
-    url("/public/fonts/MarkPro.woff2") format("woff2"),
-    url("/public/fonts/MarkPro.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: "Circular Std";
-  src: local("Circular Std Bold"), local("CircularStd-Bold"),
-    url("/public/fonts/CircularStd-Bold.woff2") format("woff2"),
-    url("/public/fonts/CircularStd-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
 $font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
   helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 $font-stack-base: "Mark Pro", Tahoma, sans-serif, $font-stack;
 $font-stack-headings: "Circular Std", Tahoma, sans-serif, $font-stack;
+
+:root {
+  --font-stack: #{$font-stack};
+  --font-stack-base: #{$font-stack-base};
+  --font-stack-headings: #{$font-stack-headings};
+}
 
 body {
   color: $color-white;
@@ -30,7 +16,7 @@ body {
 
 // Fallbacks
 @mixin font-stack-base {
-  font-family: "Mark Pro", Tahoma, sans-serif, $font-stack;
+  font-family: $font-stack-base, Tahoma, sans-serif, $font-stack;
 }
 
 @mixin text {

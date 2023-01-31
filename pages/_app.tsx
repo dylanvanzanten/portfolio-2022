@@ -1,8 +1,55 @@
 import Head from "next/head";
+import localFont from "@next/font/local";
 import type { AppProps } from "next/app";
 
 // Resources
 import "../styles/_all.scss";
+
+const markPro = localFont({
+  src: "../public/fonts/MarkPro.woff2",
+  weight: "300",
+  style: "normal",
+  display: "block",
+  variable: "--font-stack-base-font",
+  fallback: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "avenir next",
+    "avenir",
+    "segoe ui",
+    "helvetica neue",
+    "helvetica",
+    "Cantarell",
+    "Ubuntu",
+    "roboto",
+    "noto",
+    "arial",
+    "sans-serif",
+  ],
+});
+
+const circularStd = localFont({
+  src: "../public/fonts/CircularStd-Bold.woff2",
+  weight: "700",
+  style: "bold",
+  display: "block",
+  variable: "--font-stack-headings-font",
+  fallback: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "avenir next",
+    "avenir",
+    "segoe ui",
+    "helvetica neue",
+    "helvetica",
+    "Cantarell",
+    "Ubuntu",
+    "roboto",
+    "noto",
+    "arial",
+    "sans-serif",
+  ],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
