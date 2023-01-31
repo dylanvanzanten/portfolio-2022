@@ -1,17 +1,17 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import profilePicture from "../../public/img/dylan.jpg";
+import profilePicture from "../../public/img/dylan.webp";
 import Button from "../Button/Button";
 
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-type IHeroProps = {
+type IHero = {
   innerRef?: any;
   heroIcon?: any;
 };
 
 // Component
-const Hero: FC<IHeroProps> = ({
+const Hero: FC<IHero> = ({
   innerRef,
   heroIcon = <IoIosArrowRoundForward />,
 }) => {
