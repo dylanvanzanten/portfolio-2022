@@ -6,7 +6,14 @@ import type { AppProps } from "next/app";
 import "../styles/_all.scss";
 
 const markPro = localFont({
-  src: "../public/fonts/MarkPro.woff2",
+  src: [
+    {
+      path: "../public/fonts/MarkPro.woff",
+    },
+    {
+      path: "../public/fonts/MarkPro.woff2",
+    },
+  ],
   weight: "300",
   style: "normal",
   display: "block",
@@ -29,7 +36,14 @@ const markPro = localFont({
 });
 
 const circularStd = localFont({
-  src: "../public/fonts/CircularStd-Bold.woff2",
+  src: [
+    {
+      path: "../public/fonts/CircularStd-Bold.woff",
+    },
+    {
+      path: "../public/fonts/CircularStd-Bold.woff2",
+    },
+  ],
   weight: "700",
   style: "bold",
   display: "block",
