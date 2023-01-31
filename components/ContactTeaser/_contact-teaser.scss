@@ -4,7 +4,7 @@
   padding: $spacing-32 $spacing-16;
   border-radius: $border-radius-xl;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 
   @media (min-width: $mq-tab--sml) {
     padding: $spacing-64 $spacing-32;
