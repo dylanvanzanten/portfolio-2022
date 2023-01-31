@@ -5,18 +5,6 @@ const ContactTeaser = () => {
   return (
     <>
       <div className="contact-teaser">
-        <div className="contact-teaser__image">
-          <Image
-            src="/img/wave-contact.svg"
-            alt="Dylan van Zanten"
-            quality={100}
-            width={120}
-            height={100}
-            style={{
-              objectFit: "cover",
-            }}
-          />
-        </div>
         <div className="contact-teaser__content">
           <h1>Interested?</h1>
           <p>
