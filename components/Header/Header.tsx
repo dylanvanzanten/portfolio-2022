@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import Iheader from "../../interface/Iheader";
+
 // Components
 import Navigation from "../Navigation/Navigation";
 
@@ -8,7 +10,7 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "/public/logo.svg";
 
 // Component
-const Header = ({ innerRef }: { innerRef: any }) => {
+const Header = ({ innerRef }: Iheader) => {
   return (
     <header className="header" ref={innerRef}>
       <div data-grid data-cols="12" className="container">
