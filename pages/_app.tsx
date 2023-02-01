@@ -1,3 +1,4 @@
+// Libs
 import Head from "next/head";
 import localFont from "@next/font/local";
 import type { AppProps } from "next/app";
@@ -8,6 +9,7 @@ import "../styles/_all.scss";
 // Components
 import SiteMeta from "../components/SiteMeta/SiteMeta";
 
+// Fonts
 const markPro = localFont({
   src: [
     {
@@ -71,12 +73,7 @@ const circularStd = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <style jsx global>{`
-        :root {
-          --font-stack-base: ${markPro.style.fontFamily};
-          --font-stack-headings: ${circularStd.style.fontFamily};
-        }
-      `}</style>
+      <style>{`:root {--font-stack-base: ${markPro.style.fontFamily}; --font-stack-headings: ${circularStd.style.fontFamily};}`}</style>
       <Head>
         <SiteMeta />
       </Head>

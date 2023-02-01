@@ -1,6 +1,8 @@
+// Libs
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
+// Utils
 import toggleScrollLock from "../../public/js/ui/toggleScrolLock.js";
 
 // Component

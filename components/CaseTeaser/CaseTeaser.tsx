@@ -1,9 +1,11 @@
+// Libs
 import React, { FC } from "react";
 import Image from "next/image";
 import Emoji from "react-emojis";
 
 import Button from "../Button/Button";
 
+// Types
 type ICaseTeaserProps = {
   caseColor?: string;
   caseImage?: string;
