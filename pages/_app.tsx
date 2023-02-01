@@ -70,10 +70,15 @@ const circularStd = localFont({
   ],
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
-      <style>{`:root {--font-stack-base: ${markPro.style.fontFamily}; --font-stack-headings: ${circularStd.style.fontFamily};}`}</style>
+      <style jsx global>{`
+        :root {
+          --font-stack-base: ${markPro.style.fontFamily};
+          --font-stack-headings: ${circularStd.style.fontFamily};
+        }
+      `}</style>
       <Head>
         <SiteMeta />
       </Head>
