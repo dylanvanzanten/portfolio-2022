@@ -94,6 +94,7 @@
 
   &__lead {
     @include text;
+    color: $color-white;
 
     @media (min-width: $mq-tab--sml) {
       @include text-l;

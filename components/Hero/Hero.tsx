@@ -1,11 +1,16 @@
+// Libs
 import React, { FC } from "react";
 import Image from "next/image";
+
+// Resources
 import profilePicture from "../../public/img/dylan.webp";
 import fallBackProfilePicture from "../../public/img/dylan.jpeg";
+import { IoArrowForwardOutline } from "react-icons/io5";
+
+// Components
 import Button from "../Button/Button";
 
-import { IoIosArrowRoundForward } from "react-icons/io";
-
+// Types
 type IHero = {
   innerRef?: any;
   heroIcon?: any;
@@ -15,8 +20,8 @@ type IHero = {
 // Component
 const Hero: FC<IHero> = ({
   innerRef,
-  heroIcon,
-  src = <IoIosArrowRoundForward />,
+  heroIcon = <IoArrowForwardOutline />,
+  src,
 }) => {
   return (
     <div className="hero" ref={innerRef}>
