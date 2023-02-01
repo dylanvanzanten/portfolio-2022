@@ -20,7 +20,7 @@ const markPro = localFont({
   weight: "300",
   style: "normal",
   display: "block",
-  variable: "--font-stack-base-font",
+  variable: "--font-stack-base",
   fallback: [
     "-apple-system",
     "BlinkMacSystemFont",
@@ -50,7 +50,7 @@ const circularStd = localFont({
   weight: "700",
   style: "bold",
   display: "block",
-  variable: "--font-stack-headings-font",
+  variable: "--font-stack-headings",
   fallback: [
     "-apple-system",
     "BlinkMacSystemFont",
