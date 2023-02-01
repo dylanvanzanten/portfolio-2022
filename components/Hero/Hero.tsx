@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import profilePicture from "../../public/img/dylan.webp";
+import fallBackProfilePicture from "../../public/img/dylan.jpeg";
 import Button from "../Button/Button";
 
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -8,12 +9,14 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 type IHero = {
   innerRef?: any;
   heroIcon?: any;
+  src?: any;
 };
 
 // Component
 const Hero: FC<IHero> = ({
   innerRef,
-  heroIcon = <IoIosArrowRoundForward />,
+  heroIcon,
+  src = <IoIosArrowRoundForward />,
 }) => {
   return (
     <div className="hero" ref={innerRef}>
@@ -25,7 +28,7 @@ const Hero: FC<IHero> = ({
       >
         <div className="hero__image">
           <Image
-            src={profilePicture}
+            src={profilePicture ? fallBackProfilePicture : src}
             alt="Dylan van Zanten"
             quality={100}
             style={{
