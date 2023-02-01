@@ -1,0 +1,19 @@
+{
+  "name": "Dylan van Zanten",
+  "short_name": "Dylan van Zanten",
+  "start_url": ".",
+  "display": "standalone",
+  "description": "Dylan van Zanten, a digital creative with a passion for digital products that involves design, branding and code — loves to work in a cross-functional team towards a shared vision.",
+  "icons": [
+    {
+      "src": "/public/favicon/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/public/favicon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
