@@ -1,7 +1,8 @@
 $font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
   helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-$font-stack-base: "Mark Pro", Tahoma, sans-serif, $font-stack;
-$font-stack-headings: "Circular Std", Tahoma, sans-serif, $font-stack;
+$font-stack-base: var(--font-stack-base), Tahoma, sans-serif, var(--font-stack);
+$font-stack-headings: var(--font-stack-headings), Tahoma, sans-serif,
+  $font-stack;
 
 :root {
   --font-stack: #{$font-stack};
@@ -120,7 +121,6 @@ body,
 input,
 button {
   @include font-stack-base;
-  color: $color-black;
 }
 
 h1,
