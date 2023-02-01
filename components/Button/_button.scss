@@ -81,20 +81,13 @@ a.button {
 
   &--icon {
     vertical-align: middle;
+    transition: transform 0.3s ease;
 
     &:hover,
     &:focus {
-      .button__icon {
-        ion-icon {
-          transform: translateX(5px);
-        }
+      svg {
+        transform: translateX(5px);
       }
-    }
-
-    ion-icon {
-      vertical-align: middle;
-      margin-left: $spacing-8;
-      transition: transform 0.3s ease;
     }
 
     .button__icon {
@@ -122,10 +115,8 @@ a.button {
       color: $color-white;
       background-color: transparent;
 
-      .button__icon {
-        ion-icon {
-          transform: translateX(5px);
-        }
+      svg {
+        transform: translateX(5px);
       }
     }
 
@@ -137,10 +128,10 @@ a.button {
       }
     }
 
-    ion-icon {
+    svg {
       vertical-align: middle;
-      margin-left: $spacing-8;
-      transition: all 0.3s ease;
+      margin-left: $spacing-4;
+      transition: transform 0.3s ease;
     }
   }
 }
