@@ -1,8 +1,10 @@
+// Libs
 import Link from "next/link";
 
 // Resources
 import Logo from "/public/logo.svg";
 
+// Component
 const Footer = () => {
   const footercopy = new Date();
   return (

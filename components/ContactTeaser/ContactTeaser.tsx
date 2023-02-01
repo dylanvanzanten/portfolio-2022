@@ -1,6 +1,7 @@
-import Image from "next/image";
+// Libs
 import Button from "../Button/Button";
 
+// Component
 const ContactTeaser = () => {
   return (
     <>

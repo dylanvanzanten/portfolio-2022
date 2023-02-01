@@ -1,5 +1,7 @@
+// Libs
 import React from "react";
 
+// Component
 const SiteMeta = () => {
   return (
     <>

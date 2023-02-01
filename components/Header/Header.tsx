@@ -1,6 +1,8 @@
+// Libs
 import React from "react";
 import Link from "next/link";
 
+// Types
 import Iheader from "../../interface/Iheader";
 
 // Components
@@ -26,6 +28,7 @@ const Header = ({ innerRef }: Iheader) => {
   );
 };
 
+// Props
 Header.defaultProps = {
   navigation: true,
 };
