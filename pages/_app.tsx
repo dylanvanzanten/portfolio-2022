@@ -71,14 +71,14 @@ const circularStd = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <style jsx global>{`
+        :root {
+          --font-stack-base: ${markPro.style.fontFamily};
+          --font-stack-headings: ${circularStd.style.fontFamily};
+        }
+      `}</style>
       <Head>
         <SiteMeta />
-        <meta
-          name="description"
-          content="Dylan van Zanten, a digital creative with a passion for digital products that involves design, branding and code — loves to work in a cross-functional team towards a shared vision."
-        />
-        <meta property="og:locale" content="" />
-        <meta property="og:site_name" content="" />
       </Head>
       <Component {...pageProps} />
     </>
