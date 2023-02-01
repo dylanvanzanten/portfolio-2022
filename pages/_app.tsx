@@ -5,6 +5,9 @@ import type { AppProps } from "next/app";
 // Resources
 import "../styles/_all.scss";
 
+// Components
+import SiteMeta from "../components/SiteMeta/SiteMeta";
+
 const markPro = localFont({
   src: [
     {
@@ -69,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <SiteMeta />
         <meta
           name="description"
           content="Dylan van Zanten, a digital creative with a passion for digital products that involves design, branding and code — loves to work in a cross-functional team towards a shared vision."
