@@ -12,17 +12,22 @@
     flex-direction: column;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 20vh 0 0 0;
     list-style-type: none;
 
     @media (min-width: $mq-mob) {
       flex-direction: row;
+      margin: 0;
     }
 
     @media (min-width: $mq-mob) and (max-width: $mq-tab--sml) {
       flex-wrap: wrap;
       justify-content: flex-start;
       flex-direction: row;
+    }
+
+    @media (min-width: $mq-tab--sml) {
+      margin: 0;
     }
 
     &-item {
@@ -34,6 +39,7 @@
     }
 
     &-link {
+      @include heading(h4);
       color: $color-white;
       font-weight: bold;
 
@@ -43,6 +49,11 @@
 
       &[aria-current="true"] {
         color: $color-white;
+      }
+
+      @media (min-width: $mq-mob) {
+        @include text-link;
+        font-style: normal;
       }
     }
   }

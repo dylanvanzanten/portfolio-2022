@@ -5,6 +5,9 @@ import Link from "next/link";
 // Utils
 import toggleScrollLock from "../../public/js/ui/toggleScrolLock.js";
 
+// Resources
+import Logo from "/public/logo.svg";
+
 // Component
 const Navigation = ({}) => {
   const [isOpen, setIsopen] = useState(false);
@@ -27,7 +30,13 @@ const Navigation = ({}) => {
       <div className="site-nav-overlay">
         <div className="site-nav-overlay__container">
           <div data-grid data-cols="12" className="container">
-            <h2>Menu</h2>
+            {/* <h2>Menu</h2> */}
+            <span className="header__logo header__logo--nav-overlay">
+              <Logo />
+              <Link className="header__home-link" href="/">
+                Go home
+              </Link>
+            </span>
             <button
               className="site-nav-overlay__close"
               data-is-open={isOpen}
