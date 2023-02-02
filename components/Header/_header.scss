@@ -45,6 +45,8 @@
     }
 
     &--nav-overlay {
+      margin-top: $spacing-40;
+
       svg {
         width: 60px;
       }

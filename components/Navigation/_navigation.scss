@@ -52,8 +52,7 @@
       }
 
       @media (min-width: $mq-mob) {
-        @include text-link;
-        font-style: normal;
+        @include text-s;
       }
     }
   }
