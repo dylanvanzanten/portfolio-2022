@@ -1,5 +1,6 @@
 // Libs
 import React, { FC } from "react";
+import { FormattedMessage } from "react-intl";
 import PropTypes from "prop-types";
 import Link from "next/link";
 
@@ -51,7 +52,10 @@ const Button: FC<IButtonProps> = ({
         {...attributes}
       >
         {label && type !== "icon" && label}
-        {label && type === "icon" && <label>{label}</label>}
+        <FormattedMessage id="page.home.hero.c2a" />
+        {label && type === "icon" && (
+          <FormattedMessage id="page.home.hero.c2a" />
+        )}
         <span className="button__icon">{icon && icon}</span>
       </Link>
     </>

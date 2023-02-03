@@ -1,6 +1,16 @@
 {
-  "page.home.head.title": "Next.js i18n example",
-  "page.home.head.meta.description": "Next.js i18n example - Nederlands",
-  "page.home.title": "Welkom!",
-  "page.home.description": "Je leest nu nederlands 🚀"
+  "page.home.nav.logo": "Ga naar home",
+  "page.home.nav.item1": "Over",
+  "page.home.nav.item2": "Werk",
+  "page.home.nav.item3": "Contact",
+
+  "page.home.hero.title": "Hey, leuk je te ontmoeten!",
+  "page.home.hero.subtitle": "Ik ben Dylan",
+  "page.home.hero.content": "Een digitale creatief met een passie voor digitale producten waarbij design, branding en code een rol spelen — werkt graag in een cross-functioneel team aan een gezamenlijke visie.",
+  "page.home.hero.c2a": "Leer mij kennen",
+
+  "page.home.section.content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia modi rem architecto labore, voluptate ducimus sapiente, nihil voluptates, facere amet excepturi nostrum voluptatibus provident. Deserunt quaerat culpa ipsum aspernatur beatae.",
+
+  "page.footer.copy": "",
+  "page.footer.content": ""
 }

@@ -1,5 +1,6 @@
 // Libs
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import Link from "next/link";
 
 // Types
@@ -19,7 +20,7 @@ const Header = ({ innerRef }: Iheader) => {
         <span className="header__logo">
           <Logo />
           <Link className="header__home-link" href="/">
-            Go home
+            <FormattedMessage id="page.home.nav.logo" />
           </Link>
         </span>
         <Navigation />

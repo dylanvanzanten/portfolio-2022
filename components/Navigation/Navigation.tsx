@@ -1,5 +1,6 @@
 // Libs
 import React, { useEffect, useState } from "react";
+import { FormattedMessage } from "react-intl";
 import Link from "next/link";
 
 // Utils
@@ -34,7 +35,7 @@ const Navigation = ({}) => {
             <span className="header__logo header__logo--nav-overlay">
               <Logo />
               <Link className="header__home-link" href="/">
-                Go home
+                <FormattedMessage id="page.home.nav.logo" />
               </Link>
             </span>
             <button
@@ -50,17 +51,17 @@ const Navigation = ({}) => {
         <ul className="site-nav__list">
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              <FormattedMessage id="page.home.nav.item1" />
             </Link>
           </li>
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              <FormattedMessage id="page.home.nav.item2" />
             </Link>
           </li>
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              <FormattedMessage id="page.home.nav.item3" />
             </Link>
           </li>
         </ul>

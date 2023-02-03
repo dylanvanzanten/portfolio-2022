@@ -1,7 +1,6 @@
 // Libs
 import React, { useEffect, useRef } from "react";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import Head from "next/head";
 
 // Components
@@ -12,11 +11,6 @@ import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 import Footer from "../components/Footer/Footer";
 
 const Home = () => {
-  const intl = useIntl();
-  const description = intl.formatMessage({
-    id: "page.home.head.meta.description",
-  });
-
   const heroRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -62,7 +56,7 @@ const Home = () => {
 
         <section data-text className="section-content">
           <p>
-            <FormattedMessage id="page.home.description" />
+            <FormattedMessage id="page.home.section.content" />
           </p>
         </section>
         <section className="section-content">

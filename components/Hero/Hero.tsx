@@ -1,5 +1,6 @@
 // Libs
 import React, { FC } from "react";
+import { FormattedMessage } from "react-intl";
 import Image from "next/image";
 
 // Resources
@@ -49,20 +50,16 @@ const Hero: FC<IHero> = ({
         </div>
 
         <div className="hero__content">
-          <h1>Hey, nice to meet you!</h1>
-          <h2>I’m Dylan</h2>
+          <h1>
+            <FormattedMessage id="page.home.hero.title" />
+          </h1>
+          <h2>
+            <FormattedMessage id="page.home.hero.subtitle" />
+          </h2>
           <p className="hero__lead">
-            A digital creative with a passion for digital products that involve
-            design, branding and code — loves to work in a cross-functional team
-            towards a shared vision.
+            <FormattedMessage id="page.home.hero.content" />
           </p>
-          <Button
-            type="text"
-            label={`Get to know me`}
-            icon={heroIcon}
-            element="link"
-            href="/about"
-          />
+          <Button type="text" icon={heroIcon} element="link" href="/about" />
         </div>
       </div>
     </div>
