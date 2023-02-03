@@ -1,13 +1,22 @@
 // Libs
+import { IntlProvider } from "react-intl";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import localFont from "@next/font/local";
 import type { AppProps } from "next/app";
 
 // Resources
 import "../styles/_all.scss";
+import nl from "../lang/nl.json";
+import en from "../lang/en.json";
 
 // Components
 import SiteMeta from "../components/SiteMeta/SiteMeta";
+
+const messages = {
+  nl,
+  en,
+};
 
 // Fonts
 const markPro = localFont({
@@ -71,6 +80,8 @@ const circularStd = localFont({
 });
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
+  const { locale } = useRouter();
+
   return (
     <>
       <style jsx global>{`
@@ -82,7 +93,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       <Head>
         <SiteMeta />
       </Head>
-      <Component {...pageProps} />
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <Component {...pageProps} />
+      </IntlProvider>
     </>
   );
 }

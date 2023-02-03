@@ -19,16 +19,6 @@ const nextConfig = {
   i18n: {
     locales: ["en", "nl"],
     defaultLocale: "nl",
-    domains: [
-      {
-        domain: "dylanvanzanten.nl/en",
-        defaultLocale: "en-US",
-      },
-      {
-        domain: "dylanvanzanten.nl",
-        defaultLocale: "nl-NL",
-      },
-    ],
   },
 
   images: {

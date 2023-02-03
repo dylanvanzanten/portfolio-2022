@@ -1,5 +1,7 @@
 // Libs
 import React, { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import { FormattedMessage, useIntl } from "react-intl";
 import Head from "next/head";
 
 // Components
@@ -9,7 +11,12 @@ import CaseTeaser from "../components/CaseTeaser/CaseTeaser";
 import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 import Footer from "../components/Footer/Footer";
 
-export default function Home() {
+const Home = () => {
+  const intl = useIntl();
+  const description = intl.formatMessage({
+    id: "page.home.head.meta.description",
+  });
+
   const heroRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -55,10 +62,7 @@ export default function Home() {
 
         <section data-text className="section-content">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-            modi rem architecto labore, voluptate ducimus sapiente, nihil
-            voluptates, facere amet excepturi nostrum voluptatibus provident.
-            Deserunt quaerat culpa ipsum aspernatur beatae.
+            <FormattedMessage id="page.home.description" />
           </p>
         </section>
         <section className="section-content">
@@ -68,4 +72,6 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
