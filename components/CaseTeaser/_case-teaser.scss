@@ -1,5 +1,5 @@
 .case-teaser {
-  grid-column: span 11 / span 11;
+  grid-column: span 12 / span 12;
   grid-column-start: 1;
   align-self: flex-start;
   margin-top: $spacing-64;
@@ -13,7 +13,7 @@
   }
 
   &:nth-child(2n + 1) {
-    grid-column-start: 2;
+    grid-column-start: 1;
     margin-top: $spacing-64;
   }
 
