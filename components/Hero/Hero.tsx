@@ -1,6 +1,6 @@
 // Libs
 import React, { FC } from "react";
-import { FormattedMessage } from "react-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 // Resources
@@ -24,6 +24,8 @@ const Hero: FC<IHero> = ({
   heroIcon = <IoArrowForwardOutline />,
   src,
 }) => {
+  const heroContent = useTranslations("Hero");
+
   return (
     <div className="hero" ref={innerRef}>
       <div
@@ -50,16 +52,16 @@ const Hero: FC<IHero> = ({
         </div>
 
         <div className="hero__content">
-          <h1>
-            <FormattedMessage id="page.home.hero.title" />
-          </h1>
-          <h2>
-            <FormattedMessage id="page.home.hero.subtitle" />
-          </h2>
-          <p className="hero__lead">
-            <FormattedMessage id="page.home.hero.content" />
-          </p>
-          <Button type="text" icon={heroIcon} element="link" href="/about" />
+          <h1>{heroContent("title")}</h1>
+          <h2>{heroContent("subTitle")}</h2>
+          <p className="hero__lead">{heroContent("content")}</p>
+          <Button
+            type="text"
+            label={`Get to know me`}
+            icon={heroIcon}
+            element="link"
+            href="/about"
+          />
         </div>
       </div>
     </div>

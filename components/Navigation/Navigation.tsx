@@ -1,6 +1,6 @@
 // Libs
 import React, { useEffect, useState } from "react";
-import { FormattedMessage } from "react-intl";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 // Utils
@@ -11,6 +11,9 @@ import Logo from "/public/logo.svg";
 
 // Component
 const Navigation = ({}) => {
+  const navigationLogo = useTranslations("Header");
+  const navigationContent = useTranslations("Navigation");
+
   const [isOpen, setIsopen] = useState(false);
 
   useEffect(() => {
@@ -35,7 +38,7 @@ const Navigation = ({}) => {
             <span className="header__logo header__logo--nav-overlay">
               <Logo />
               <Link className="header__home-link" href="/">
-                <FormattedMessage id="page.home.nav.logo" />
+                {navigationLogo("logoTitle")}
               </Link>
             </span>
             <button
@@ -50,18 +53,27 @@ const Navigation = ({}) => {
         </div>
         <ul className="site-nav__list">
           <li className="site-nav__list-item">
-            <Link className="site-nav__list-link" href="">
-              <FormattedMessage id="page.home.nav.item1" />
+            <Link
+              className="site-nav__list-link"
+              href={navigationContent("navigationLink1").toLowerCase()}
+            >
+              {navigationContent("navigationLink1")}
             </Link>
           </li>
           <li className="site-nav__list-item">
-            <Link className="site-nav__list-link" href="">
-              <FormattedMessage id="page.home.nav.item2" />
+            <Link
+              className="site-nav__list-link"
+              href={navigationContent("navigationLink2").toLowerCase()}
+            >
+              {navigationContent("navigationLink2")}
             </Link>
           </li>
           <li className="site-nav__list-item">
-            <Link className="site-nav__list-link" href="">
-              <FormattedMessage id="page.home.nav.item3" />
+            <Link
+              className="site-nav__list-link"
+              href={navigationContent("navigationLink3").toLowerCase()}
+            >
+              {navigationContent("navigationLink3")}
             </Link>
           </li>
         </ul>

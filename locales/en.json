@@ -1,0 +1,33 @@
+{
+  "Header": {
+    "logoTitle": "Welcome to Next.js!"
+  },
+
+  "Navigation": {
+    "navigationLink1": "About",
+    "navigationLink2": "Work",
+    "navigationLink3": "Contact"
+  },
+
+  "Hero": {
+    "title": "Hey, nice to meet you!",
+    "subTitle": "I'm Dylan",
+    "content": "A digital creative with a passion for digital products that involve design, branding and code — loves to work in a cross-functional team towards a shared vision.",
+    "heroC2a": "Get to know me"
+  },
+
+  "sectionContent": {
+    "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia modi rem architecto labore, voluptate ducimus sapiente, nihil voluptates, facere amet excepturi nostrum voluptatibus provident. Deserunt quaerat culpa ipsum aspernatur beatae."
+  },
+
+  "contactTeaser": {
+    "title": "Interested",
+    "content": "I'm happy to talk about a possible project, working together, looking for new opportunities or just to catch up. If you'd like to get in touch, just shoot me an message!",
+    "contactC2a": ""
+  },
+
+  "Footer": {
+    "copy": "Copyleft",
+    "content": "— website is in tinkering mode"
+  }
+}

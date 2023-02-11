@@ -1,0 +1,33 @@
+{
+  "Header": {
+    "logoTitle": "Welcome to Next.js!"
+  },
+
+  "Navigation": {
+    "navigationLink1": "Over",
+    "navigationLink2": "Werk",
+    "navigationLink3": "Contact"
+  },
+
+  "Hero": {
+    "title": "Hey, leuk je te ontmoeten!",
+    "subTitle": "Ik ben Dylan",
+    "content": "Een digitale creatief met een passie voor digitale producten waarbij design, branding en code een rol spelen — werkt graag in een cross-functioneel team aan een gezamenlijke visie.",
+    "heroC2a": "Leer mij kennen"
+  },
+
+  "sectionContent": {
+    "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia modi rem architecto labore, voluptate ducimus sapiente, nihil voluptates, facere amet excepturi nostrum voluptatibus provident. Deserunt quaerat culpa ipsum aspernatur beatae."
+  },
+
+  "contactTeaser": {
+    "title": "Geïnteresseerd",
+    "content": "Ik praat graag over een mogelijk project, samenwerking, nieuwe mogelijkheden of gewoon om bij te praten. Als je in contact wilt komen, stuur me dan een berichtje!",
+    "contactC2a": ""
+  },
+
+  "Footer": {
+    "copy": "Copyleft",
+    "content": "— website staat in de knutselmodus"
+  }
+}

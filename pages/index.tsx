@@ -1,6 +1,7 @@
 // Libs
 import React, { useEffect, useRef } from "react";
-import { FormattedMessage } from "react-intl";
+import { GetStaticPropsContext } from "next";
+import { useTranslations } from "next-intl";
 import Head from "next/head";
 
 // Components
@@ -11,6 +12,8 @@ import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 import Footer from "../components/Footer/Footer";
 
 const Home = () => {
+  const sectionContent = useTranslations("sectionContent");
+
   const heroRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -54,10 +57,8 @@ const Home = () => {
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"blue"} />
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"green"} />
 
-        <section data-text className="section-content">
-          <p>
-            <FormattedMessage id="page.home.section.content" />
-          </p>
+        <section className="section-content">
+          <p>{sectionContent("content")}</p>
         </section>
         <section className="section-content">
           <ContactTeaser />
@@ -67,5 +68,13 @@ const Home = () => {
     </>
   );
 };
+
+export function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
+}
 
 export default Home;

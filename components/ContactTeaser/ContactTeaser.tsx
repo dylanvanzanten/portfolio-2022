@@ -1,18 +1,16 @@
 // Libs
+import { useTranslations } from "next-intl";
 import Button from "../Button/Button";
 
 // Component
 const ContactTeaser = () => {
+  const contactTeaserContent = useTranslations("contactTeaser");
   return (
     <>
       <div className="contact-teaser">
         <div className="contact-teaser__content">
-          <h1>Interested?</h1>
-          <p>
-            I&apos;m happy to talk about a possible project, working together,
-            looking for new opportunities or just to catch up. If you&apos;d
-            like to get in touch, just shoot me an message!
-          </p>
+          <h1>{contactTeaserContent("title")}</h1>
+          <p>{contactTeaserContent("content")}</p>
           <Button label={`Let's talk!`} element="link" href="/contact" />
         </div>
       </div>
