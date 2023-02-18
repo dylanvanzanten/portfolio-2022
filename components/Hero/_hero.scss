@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: $spacing-128 0;
+  padding: $spacing-96 0;
   background-color: $color-primary;
   margin-bottom: $spacing-64;
 
@@ -51,7 +51,7 @@
   &__image {
     position: absolute;
     display: none;
-    right: $spacing-16;
+    right: $spacing-32;
     z-index: 5;
 
     @media (min-width: $mq-tab--sml) {
@@ -65,7 +65,6 @@
 
   &__content {
     align-self: flex-end;
-    order: 1;
     z-index: 5;
 
     @media (min-width: $mq-tab--sml) {
@@ -74,11 +73,13 @@
 
     h1 {
       @include heading(h6);
+      margin-bottom: -$spacing-8;
       color: $color-white;
     }
 
     h2 {
       @include heading(h1);
+      margin-bottom: 0;
       color: $color-white;
     }
 
@@ -94,6 +95,7 @@
 
   &__lead {
     @include text;
+    margin: $spacing-24 0;
     color: $color-white;
 
     @media (min-width: $mq-tab--sml) {
