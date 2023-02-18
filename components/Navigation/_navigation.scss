@@ -1,9 +1,18 @@
 .site-nav {
   .site-nav-open {
     display: inline-flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
     @media (min-width: $mq-mob) {
       display: none;
+    }
+
+    svg {
+      height: 24px;
+      width: 24px;
+      fill: $color-white;
     }
   }
 

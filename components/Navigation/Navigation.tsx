@@ -7,6 +7,8 @@ import toggleScrollLock from "../../public/js/ui/toggleScrolLock.js";
 
 // Resources
 import Logo from "/public/logo.svg";
+import MenuToggle from "/public/img/menu-toggle.svg";
+import MenuToggleClose from "/public/img/menu-toggle-close.svg";
 
 // Component
 const Navigation = ({}) => {
@@ -25,7 +27,8 @@ const Navigation = ({}) => {
         onClick={() => setIsopen(!isOpen)}
         data-site-nav-toggle
       >
-        <span>Open</span>
+        <MenuToggle />
+        <span className="visuallyhidden">Open</span>
       </button>
       <div className="site-nav-overlay">
         <div className="site-nav-overlay__container">
@@ -43,7 +46,8 @@ const Navigation = ({}) => {
               onClick={() => setIsopen(!isOpen)}
               data-site-nav-toggle
             >
-              <span>Close</span>
+              <MenuToggleClose />
+              <span className="visuallyhidden">Close</span>
             </button>
           </div>
         </div>
