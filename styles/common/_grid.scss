@@ -224,13 +224,7 @@
 }
 
 [data-cols="12"] {
-  grid-template-columns: repeat(4, [col] 1fr);
-}
-
-@media (min-width: $mq-tab--sml) {
-  [data-cols="12"] {
-    grid-template-columns: repeat(12, [col] 1fr);
-  }
+  grid-template-columns: repeat(12, [col] 1fr);
 }
 
 [data-col] {
