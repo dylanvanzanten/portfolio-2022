@@ -38,6 +38,8 @@ const Hero: FC<IHero> = ({
             quality={100}
             style={{
               maxHeight: "750px",
+              // For Safari
+              maxWidth: "500px",
               width: "100%",
               objectFit: "cover",
             }}
