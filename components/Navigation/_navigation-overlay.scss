@@ -54,6 +54,7 @@ body[data-nav-is-open="true"] .site-nav-overlay {
   }
 
   &__close {
+    display: flex;
     background: transparent;
     border: none;
     cursor: pointer;

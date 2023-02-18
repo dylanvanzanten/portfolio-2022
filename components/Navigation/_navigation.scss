@@ -1,6 +1,7 @@
 .site-nav {
   .site-nav-open {
-    display: inline-flex;
+    display: flex;
+    margin-top: $spacing-4;
     background: transparent;
     border: none;
     cursor: pointer;
