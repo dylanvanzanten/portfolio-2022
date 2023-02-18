@@ -4,7 +4,7 @@ body[data-nav-is-open="true"] .site-nav-overlay {
 
 .site-nav-overlay {
   $self: &;
-  z-index: 12;
+  z-index: 20;
   position: fixed;
   top: 0;
   left: 0;
