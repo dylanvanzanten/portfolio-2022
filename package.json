@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.3.0",
     "@next/font": "^13.1.6",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "18.11.9",
