@@ -1,7 +1,22 @@
 {
-  "semi": false,
-  "trailingComma": "es5",
-  "singleQuote": true,
-  "tabWidth": 2,
-  "useTabs": false
+  "[typescript]": {
+    "prettier.prettierPath": "",
+    "prettier.ignorePath": ".prettierignore",
+    "prettier.requireConfig": false,
+    "editor.formatOnSave": true,
+    "prettier.configPath": ".prettierrc.json",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSaveMode": "modifications",
+    "files.autoSave": "afterDelay"
+  },
+  "[javascript]": {
+    "prettier.prettierPath": "",
+    "prettier.ignorePath": ".prettierignore",
+    "prettier.requireConfig": false,
+    "editor.formatOnSave": true,
+    "prettier.configPath": ".prettierrc.json",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSaveMode": "modifications",
+    "files.autoSave": "afterDelay"
+  }
 }
