@@ -1,3 +1,3 @@
 export default interface IHome {
-  innerRef: any;
+  innerRef?: any | null;
 }
