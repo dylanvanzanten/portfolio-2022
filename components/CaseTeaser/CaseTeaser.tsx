@@ -1,23 +1,13 @@
 // Libs
-import React, { FC } from "react";
+import React from "react";
 import Image from "next/image";
 import Emoji from "react-emojis";
 
-// Types
-type ICaseTeaserProps = {
-  caseColor?: string;
-  caseImage?: string;
-  caseImageAlt?: string;
-  caseIcon?: undefined;
-  caseTitle?: string;
-  caseContent?: string;
-  caseTags?: string[];
-  caseLink?: string;
-  caseLinkIcon?: string;
-};
+// Interfaces
+import ICaseTeaser from "../../interface/ICaseTeaser";
 
 // Component
-const CaseTeaser: FC<ICaseTeaserProps> = ({
+const CaseTeaser = ({
   caseColor = "#000",
   caseImage = "https://via.placeholder.com/450.png",
   caseImageAlt = "Placeholder image",
@@ -26,7 +16,7 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
   caseContent = "Project content here",
   caseTags = ["Branding", "Design", "Development"],
   caseLink = "https://dylanvanzanten.nl.nl",
-}) => {
+}: ICaseTeaser) => {
   return (
     <a className="case-teaser" href={caseLink}>
       <article className="case-teaser__inner">
