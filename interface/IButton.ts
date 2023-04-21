@@ -1,4 +1,4 @@
-export default interface Ibutton {
+export default interface IButton {
   classNames?: string;
   label?: string;
   type?: string;

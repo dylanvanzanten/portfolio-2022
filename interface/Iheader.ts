@@ -1,3 +1,3 @@
-export default interface Iheader {
-	innerRef?: any | null;
+export default interface IHeader {
+  innerRef?: any | null;
 }
