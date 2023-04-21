@@ -3,19 +3,17 @@ import React, { FC } from "react";
 import Image from "next/image";
 import Emoji from "react-emojis";
 
-import Button from "../Button/Button";
-
 // Types
 type ICaseTeaserProps = {
   caseColor?: string;
   caseImage?: string;
   caseImageAlt?: string;
-  caseIcon?: any;
+  caseIcon?: undefined;
   caseTitle?: string;
   caseContent?: string;
   caseTags?: string[];
   caseLink?: string;
-  caseLinkIcon?: any;
+  caseLinkIcon?: string;
 };
 
 // Component
@@ -28,7 +26,6 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
   caseContent = "Project content here",
   caseTags = ["Branding", "Design", "Development"],
   caseLink = "https://dylanvanzanten.nl.nl",
-  // caseLinkIcon = <ion-icon name="arrow-forward-outline" />,
 }) => {
   return (
     <a className="case-teaser" href={caseLink}>
@@ -64,13 +61,6 @@ const CaseTeaser: FC<ICaseTeaserProps> = ({
               </li>
             ))}
           </ul>
-          {/* <Button
-            type="icon"
-            label={`View project`}
-            icon={caseLinkIcon}
-            element="link"
-            href={caseLink}
-          /> */}
         </div>
       </article>
     </a>

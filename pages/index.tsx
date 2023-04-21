@@ -2,6 +2,9 @@
 import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 
+// Interfaces
+import IHome from "../interface/IHome";
+
 // Components
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
@@ -9,7 +12,7 @@ import CaseTeaser from "../components/CaseTeaser/CaseTeaser";
 import ContactTeaser from "../components/ContactTeaser/ContactTeaser";
 import Footer from "../components/Footer/Footer";
 
-export default function Home() {
+const Home = ({}: IHome) => {
   const heroRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -68,4 +71,6 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

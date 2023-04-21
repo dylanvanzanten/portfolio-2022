@@ -13,7 +13,7 @@ const ContactTeaser = () => {
             looking for new opportunities or just to catch up. If you&apos;d
             like to get in touch, just shoot me an message!
           </p>
-          <Button label={`Let's talk!`} element="link" href="/contact" />
+          <Button label={`Let's talk!`} href="/contact" />
         </div>
       </div>
     </>

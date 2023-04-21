@@ -1,41 +1,24 @@
 // Libs
-import React, { FC } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import Link from "next/link";
 
-// Types
-type IButtonProps = {
-  classNames?: string;
-  element?: any;
-  label?: string;
-  type?: any;
-  buttonType?: any;
-  href?: any;
-  tstId?: any;
-  icon?: any;
-  handleClick?: any;
-  target?: any;
-  isLoading?: any;
-  disabled?: any;
-  isDisabled?: any;
-};
+// Interfaces
+import IButton from "../../interface/IButton";
 
 // Component
-const Button: FC<IButtonProps> = ({
+const Button = ({
   classNames,
-  element,
   label,
   type,
   buttonType,
-  href,
+  href = "",
   tstId,
   icon,
-  handleClick,
   target,
   isLoading,
   isDisabled,
   ...attributes
-}) => {
+}: IButton) => {
   return (
     <>
       <Link
@@ -45,14 +28,13 @@ const Button: FC<IButtonProps> = ({
         type={buttonType || undefined}
         href={href}
         data-test-id={tstId}
-        onClick={handleClick}
         target={target}
         disabled={isDisabled || isLoading}
         {...attributes}
       >
         {label && type !== "icon" && label}
         {label && type === "icon" && <label>{label}</label>}
-        <span className="button__icon">{icon && icon}</span>
+        <span className="button__icon">{icon}</span>
       </Link>
     </>
   );
@@ -64,26 +46,7 @@ Button.defaultProps = {
   label: "",
   buttonType: "",
   href: "",
-  handleClick: function defaultFunction() {},
   isLoading: false,
-};
-
-const { bool, func, string, object } = PropTypes;
-
-Button.propTypes = {
-  classNames: string,
-  element: string,
-  label: string,
-  type: string,
-  buttonType: string,
-  href: string,
-  tstId: string,
-  icon: object,
-  handleClick: func,
-  target: string,
-  isLoading: bool,
-  disabled: string,
-  isDisabled: bool,
 };
 
 export default Button;

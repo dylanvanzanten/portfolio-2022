@@ -1,6 +1,6 @@
 // Libs
 import Head from "next/head";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import type { AppProps } from "next/app";
 
 // Resources
