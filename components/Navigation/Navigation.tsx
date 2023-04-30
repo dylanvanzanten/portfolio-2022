@@ -54,17 +54,17 @@ const Navigation = ({}) => {
         <ul className="site-nav__list">
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              Work
             </Link>
           </li>
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              About
             </Link>
           </li>
           <li className="site-nav__list-item">
             <Link className="site-nav__list-link" href="">
-              Link
+              Contact
             </Link>
           </li>
         </ul>

@@ -46,15 +46,39 @@
       @media (min-width: $mq-tab--sml) {
         margin: 0 0 0 $spacing-48;
       }
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
 
     &-link {
       @include heading(h4);
+      position: relative;
       color: $color-white;
-      font-weight: bold;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
 
       &:hover {
-        color: $color-white;
+        color: inherit;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right top;
+        width: 100%;
+        height: 2px;
+        background: $color-white;
+        transition: transform $duration-slow;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+        transform-origin: left top;
       }
 
       &[aria-current="true"] {

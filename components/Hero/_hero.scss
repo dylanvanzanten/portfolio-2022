@@ -4,10 +4,6 @@
   background-color: $color-primary;
   margin-bottom: $spacing-64;
 
-  @media (min-width: $mq-tab--sml) {
-    padding: $spacing-64;
-  }
-
   &::before,
   &::after {
     content: "";
@@ -17,6 +13,10 @@
     background-position: bottom left;
     height: 100%;
     width: 100%;
+
+    @media (min-width: 570px) {
+      background-size: 90%;
+    }
 
     @media (min-width: $mq-mob--lrg) {
       width: 50%;
@@ -51,7 +51,7 @@
   &__image {
     position: absolute;
     display: none;
-    right: $spacing-32;
+    right: $spacing-32 - $spacing-8;
     z-index: 5;
 
     @media (min-width: $mq-tab--sml) {
