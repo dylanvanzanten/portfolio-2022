@@ -1,21 +1,29 @@
 .header {
   display: flex;
   max-height: 100px;
-  background: $color-black;
-  position: sticky;
+  background-color: transparent;
+  position: absolute;
   z-index: 20;
   top: 0;
-  box-shadow: $box-shadow-default--soft;
-  transition: $ease-in-out $duration-slow;
+  right: 0;
+  left: 0;
+  transition: $ease-in-out $duration-fast;
 
   &--sticky {
+    position: fixed;
     background-color: $color-primary;
+    box-shadow: $box-shadow-default--soft;
+    transform: translateY(0);
 
     .site-nav {
       @media (min-width: $mq-mob) {
         padding-top: 0;
       }
     }
+  }
+
+  &--hide {
+    transform: translateY(-100%);
   }
 
   .container {
