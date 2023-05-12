@@ -3,16 +3,16 @@ import React from "react";
 import Image from "next/image";
 
 // Interfaces
-import IHero from "../../interface/IHero";
-import IButton from "../../interface/IButton";
+import IHero from "@/interface/IHero";
+import IButton from "@/interface/IButton";
 
 // Resources
-import profilePicture from "../../public/img/dylan.webp";
-import fallBackProfilePicture from "../../public/img/dylan.jpeg";
+import profilePicture from "@/public/img/dylan.webp";
+import fallBackProfilePicture from "@/public/img/dylan.jpeg";
 import { IoArrowForwardOutline } from "react-icons/io5";
 
 // Components
-import Button from "../Button/Button";
+import Button from "@/components/Button/Button";
 
 // Component
 const Hero = ({

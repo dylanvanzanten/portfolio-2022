@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 // Utils
-import toggleScrollLock from "../../public/js/ui/toggleScrolLock.js";
+import toggleScrollLock from "@/public/js/ui/toggleScrolLock.js";
 
 // Resources
-import Logo from "/public/logo.svg";
-import MenuToggle from "/public/img/menu-toggle.svg";
-import MenuToggleClose from "/public/img/menu-toggle-close.svg";
+import Logo from "@/public/logo.svg";
+import MenuToggle from "@/public/img/menu-toggle.svg";
+import MenuToggleClose from "@/public/img/menu-toggle-close.svg";
 
 // Component
 const Navigation = ({}) => {

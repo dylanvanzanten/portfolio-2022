@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // Resources
-import Logo from "/public/logo.svg";
+import Logo from "@/public/logo.svg";
 
 // Component
 const Footer = () => {

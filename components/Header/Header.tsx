@@ -3,13 +3,13 @@ import React from "react";
 import Link from "next/link";
 
 // Types
-import IHeader from "../../interface/IHeader";
+import IHeader from "@/interface/IHeader";
 
 // Components
-import Navigation from "../Navigation/Navigation";
+import Navigation from "@/components/Navigation/Navigation";
 
 // Resources
-import Logo from "/public/logo.svg";
+import Logo from "@/public/logo.svg";
 
 // Component
 const Header = ({ innerRef }: IHeader) => {

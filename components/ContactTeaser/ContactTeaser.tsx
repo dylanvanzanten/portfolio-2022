@@ -1,5 +1,5 @@
 // Libs
-import Button from "../Button/Button";
+import Button from "@/components/Button/Button";
 
 // Component
 const ContactTeaser = () => {
