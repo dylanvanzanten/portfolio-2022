@@ -1,3 +1,4 @@
+// @refresh reset
 /* JS solution since needed on iOS https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/ */
 
 let scrollY = 0;
