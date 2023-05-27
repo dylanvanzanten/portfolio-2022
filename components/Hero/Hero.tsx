@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 
 // Interfaces
-import IHero from "@/interface/IHero";
-import IButton from "@/interface/IButton";
+import IHero from "@/components/Hero/types/IHero";
+import IButton from "@/components/Button/types/IButton";
 
 // Resources
 import profilePicture from "@/public/img/dylan.webp";
