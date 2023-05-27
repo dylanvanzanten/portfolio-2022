@@ -11,6 +11,7 @@ import Hero from "@/components/Hero/Hero";
 import CaseTeaser from "@/components/CaseTeaser/CaseTeaser";
 import ContactTeaser from "@/components/ContactTeaser/ContactTeaser";
 import Footer from "@/components/Footer/Footer";
+import Typography from "@/components/Typography/Typography";
 
 const Home = ({}: IHome) => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -75,12 +76,12 @@ const Home = ({}: IHome) => {
         <CaseTeaser caseTitle={"Nu Wonen"} caseColor={"green"} />
 
         <section data-text className="section-content">
-          <p>
+          <Typography variant="body" as="intro" color="white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
             modi rem architecto labore, voluptate ducimus sapiente, nihil
             voluptates, facere amet excepturi nostrum voluptatibus provident.
             Deserunt quaerat culpa ipsum aspernatur beatae.
-          </p>
+          </Typography>
         </section>
         <section className="section-content">
           <ContactTeaser />

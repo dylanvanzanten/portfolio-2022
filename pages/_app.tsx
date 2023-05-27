@@ -4,10 +4,10 @@ import localFont from "next/font/local";
 import type { AppProps } from "next/app";
 
 // Resources
-import "../styles/_all.scss";
+import "@/styles/_all.scss";
 
 // Components
-import SiteMeta from "../components/SiteMeta/SiteMeta";
+import SiteMeta from "@/components/SiteMeta/SiteMeta";
 
 // Fonts
 const markPro = localFont({

@@ -1,6 +1,9 @@
 // Libs
 import Link from "next/link";
 
+// Components
+import Typography from "@/components/Typography/Typography";
+
 // Resources
 import Logo from "@/public/logo.svg";
 
@@ -16,10 +19,10 @@ const Footer = () => {
             Go home
           </Link>
         </span>
-        <p>
+        <Typography variant="body" color="white">
           &copy; Copyleft {footercopy.getFullYear()} — website is in tinkering
           mode
-        </p>
+        </Typography>
       </div>
     </footer>
   );

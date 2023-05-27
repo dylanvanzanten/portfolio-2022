@@ -74,13 +74,11 @@
     h1 {
       @include heading(h6);
       margin-bottom: -$spacing-8;
-      color: $color-white;
     }
 
     h2 {
       @include heading(h1);
       margin-bottom: 0;
-      color: $color-white;
     }
 
     .button {
@@ -96,7 +94,6 @@
   &__lead {
     @include text;
     margin: $spacing-24 0;
-    color: $color-white;
 
     @media (min-width: $mq-tab--sml) {
       @include text-l;

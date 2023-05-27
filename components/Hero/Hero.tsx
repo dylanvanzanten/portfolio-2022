@@ -6,13 +6,14 @@ import Image from "next/image";
 import IHero from "@/components/Hero/interface/IHero";
 import IButton from "@/components/Button/interface/IButton";
 
+// Components
+import Typography from "@/components/Typography/Typography";
+import Button from "@/components/Button/Button";
+
 // Resources
 import profilePicture from "@/public/img/dylan.webp";
 import fallBackProfilePicture from "@/public/img/dylan.jpeg";
 import { IoArrowForwardOutline } from "react-icons/io5";
-
-// Components
-import Button from "@/components/Button/Button";
 
 // Component
 const Hero = ({
@@ -48,13 +49,18 @@ const Hero = ({
         </div>
 
         <div className="hero__content">
-          <h1>Hey, nice to meet you!</h1>
-          <h2>I’m Dylan</h2>
-          <p className="hero__lead">
+          <Typography variant="h1" color="white">
+            Hey, nice to meet you!
+          </Typography>
+          <Typography variant="h2" color="white">
+            I’m Dylan
+          </Typography>
+          <Typography variant="body" color="white" className="hero__lead">
+            {" "}
             A digital creative with a passion for digital products that involve
             design, branding and code — loves to work in a cross-functional team
             towards a shared vision.
-          </p>
+          </Typography>
           <Button
             type="text"
             label={`Get to know me`}

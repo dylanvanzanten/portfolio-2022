@@ -5,6 +5,9 @@ import Link from "next/link";
 // Utils
 import toggleScrollLock from "@/public/js/ui/toggleScrolLock.js";
 
+// Components
+import Typography from "@/components/Typography/Typography";
+
 // Resources
 import Logo from "@/public/logo.svg";
 import MenuToggle from "@/public/img/menu-toggle.svg";
@@ -28,7 +31,13 @@ const Navigation = ({}) => {
         data-site-nav-toggle
       >
         <MenuToggle />
-        <span className="visuallyhidden">Open</span>
+        <Typography
+          variant="text-caption"
+          color="white"
+          className="visuallyhidden"
+        >
+          Open
+        </Typography>
       </button>
       <div className="site-nav-overlay">
         <div className="site-nav-overlay__container">
@@ -47,7 +56,13 @@ const Navigation = ({}) => {
               data-site-nav-toggle
             >
               <MenuToggleClose />
-              <span className="visuallyhidden">Close</span>
+              <Typography
+                variant="text-caption"
+                color="white"
+                className="visuallyhidden"
+              >
+                Close
+              </Typography>
             </button>
           </div>
         </div>
