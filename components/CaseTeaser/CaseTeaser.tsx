@@ -4,7 +4,7 @@ import Image from "next/image";
 import Emoji from "react-emojis";
 
 // Interfaces
-import ICaseTeaser from "@/components/CaseTeaser/types/ICaseTeaser";
+import ICaseTeaser from "@/components/CaseTeaser/interface/ICaseTeaser";
 
 // Component
 const CaseTeaser = ({

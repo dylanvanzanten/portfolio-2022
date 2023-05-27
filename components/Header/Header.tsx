@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 // Types
-import IHeader from "@/components/Header/types/IHeader";
+import IHeader from "@/components/Header/interface/IHeader";
 
 // Components
 import Navigation from "@/components/Navigation/Navigation";

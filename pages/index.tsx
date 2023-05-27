@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 
 // Interfaces
-import IHome from "@/pages/types/IHome";
+import IHome from "@/pages/interface/IHome";
 
 // Components
 import Header from "@/components/Header/Header";
