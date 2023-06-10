@@ -9,9 +9,9 @@ import IHome from "@/pages/interface/IHome";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import CaseTeaser from "@/components/CaseTeaser/CaseTeaser";
+import Typography from "@/components/Typography/Typography";
 import ContactTeaser from "@/components/ContactTeaser/ContactTeaser";
 import Footer from "@/components/Footer/Footer";
-import Typography from "@/components/Typography/Typography";
 
 const Home = ({}: IHome) => {
   const heroRef = useRef<HTMLDivElement>(null);
