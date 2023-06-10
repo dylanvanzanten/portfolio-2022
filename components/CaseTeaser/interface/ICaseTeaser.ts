@@ -1,4 +1,4 @@
-export default interface ICaseTeaser {
+export interface ICaseTeaser {
   caseColor?: string;
   caseImage?: string;
   caseImageAlt?: string;

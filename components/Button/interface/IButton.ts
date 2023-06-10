@@ -1,4 +1,5 @@
-export default interface IButton {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export interface IButton {
   classNames?: string;
   label?: string;
   type?: string;

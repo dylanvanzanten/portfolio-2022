@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 // Interfaces
-import IButton from "@/components/Button/interface/IButton";
+import { IButton } from "@/components/Button/interface/IButton";
 
 // Component
 const Button = ({

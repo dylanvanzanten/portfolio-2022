@@ -5,7 +5,7 @@ import Image from "next/image";
 import Emoji from "react-emojis";
 
 // Interfaces
-import ICaseTeaser from "@/components/CaseTeaser/interface/ICaseTeaser";
+import { ICaseTeaser } from "@/components/CaseTeaser/interface/ICaseTeaser";
 
 // Components
 import Typography from "@/components/Typography/Typography";

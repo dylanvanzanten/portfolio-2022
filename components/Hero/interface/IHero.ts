@@ -1,5 +1,6 @@
-export default interface IHero {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export interface IHero {
   innerRef?: any | null;
-  heroIcon?: unknown;
+  heroIcon?: any;
   src?: string;
 }
