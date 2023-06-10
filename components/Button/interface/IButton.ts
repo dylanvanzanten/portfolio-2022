@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default interface IButton {
   classNames?: string;
   label?: string;
